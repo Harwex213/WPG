@@ -1,35 +1,39 @@
 .columns {
-	position: absolute;
-
+    position: absolute;
 }
 
 h1 {
-	font-size: 42px;
-	font-style: italic;
-	font-weight: 900;
-	grid-area: h1;
-	align-self: flex-end;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 900;
+    grid-area: h1;
+    align-self: flex-end;
+    vertical-align: middle;
 }
 
-h2 { 
-	grid-area: h2;
-	font-family: "Open Sans";
-	font-size: 17px;
-	font-weight: 400;
+h2 {
+    grid-area: h2;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 400;
 }
 
 a {
-	grid-area: button;
+    grid-area: button;
+}
+
+.imgBody {
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    /*grid-area: img;*/
 }
 
 .container-introduction {
-	font-family: "Roboto";
-	display: grid;
-	grid-template-columns: 0.5fr 450px 3fr 0.5fr;;
-	grid-template-rows: repeat(3, 1fr);
-	min-height: 660px;
-	grid-template-areas: 
-	". h1  . . ."
-	". h2  . . ."
-	". button  . . .";
+    font-family: "Roboto";
+    display: grid;
+    grid-template-columns: 0.5fr 20px 430px 1fr 430px 20px 0.5fr;
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 670px;
+    grid-template-areas: ". . h1 . . . ." ". . h2 . . . ." ". . button . . . .";
 }
