@@ -1,0 +1,35 @@
+.columns {
+	position: absolute;
+
+}
+
+h1 {
+	font-size: 42px;
+	font-style: italic;
+	font-weight: 900;
+	grid-area: h1;
+	align-self: flex-end;
+}
+
+h2 { 
+	grid-area: h2;
+	font-family: "Open Sans";
+	font-size: 17px;
+	font-weight: 400;
+}
+
+a {
+	grid-area: button;
+}
+
+.container-introduction {
+	font-family: "Roboto";
+	display: grid;
+	grid-template-columns: 0.5fr 450px 3fr 0.5fr;;
+	grid-template-rows: repeat(3, 1fr);
+	min-height: 660px;
+	grid-template-areas: 
+	". h1  . . ."
+	". h2  . . ."
+	". button  . . .";
+}
