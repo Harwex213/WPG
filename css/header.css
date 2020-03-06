@@ -1,59 +1,58 @@
-
 .logo {
-	grid-area: logo;
-	display: flex;
+    grid-area: logo;
+    display: flex;
 }
 
 .logo a {
-	margin: auto;
+    margin: auto;
 }
+
 .logo a div {
-	transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .logo a:nth-child(1) div {
-	background-image: url(../imgs/logo_black.png);
-	height: 97px;
-	width: 97px;
+    background-image: url(../imgs/logo_black.png);
+    height: 97px;
+    width: 97px;
 }
 
 .logo a:nth-child(1) div:hover {
-	background-image: url(../imgs/logo.png);
+    background-image: url(../imgs/logo.png);
 }
 
 .logo a:nth-child(2) div {
-	background-image: url(../imgs/best_wpg.png);
-	height: 94px;
-	width: 94px;
+    background-image: url(../imgs/best_wpg.png);
+    height: 94px;
+    width: 94px;
 }
 
 .logo a:nth-child(2) div:hover {
-	background-image: url(../imgs/best_wpg_hover.png);
+    background-image: url(../imgs/best_wpg_hover.png);
 }
 
 .navbar {
-	grid-area: navbar;
-	display: flex;
-	font-family: "Open Sans";
-	font-size: 16px;
-	font-weight: 300;
+    grid-area: navbar;
+    display: flex;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .navbar a {
-	text-decoration: none;
-	margin: auto;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
 }
 
 header .container {
-	display: grid;
-	grid-template-columns: 0.5fr 250px 1fr 3fr 0.5fr;
-	grid-template-rows: 108px;
-	grid-template-areas: 
-	". logo . navbar .";
-	align-items: center;
-	background-image: -moz-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
-	background-image: -webkit-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
-	background-image: -ms-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
-	box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: 0.5fr 250px 1fr 650px 0.5fr;
+    grid-template-rows: 108px;
+    grid-template-areas: ". logo . navbar .";
+    align-items: center;
+    background-image: -moz-linear-gradient( -176deg, rgb(18, 16, 11) 0%, rgb(28, 28, 28) 100%);
+    background-image: -webkit-linear-gradient( -176deg, rgb(18, 16, 11) 0%, rgb(28, 28, 28) 100%);
+    background-image: -ms-linear-gradient( -176deg, rgb(18, 16, 11) 0%, rgb(28, 28, 28) 100%);
+    box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
 }
