@@ -1,0 +1,32 @@
+@media screen and (max-width:1050px)
+{
+	.columns {
+		left: 60%;
+	}
+}
+
+
+@media screen and (max-width:768px)
+{
+	.columns {
+		display: none;
+	}
+
+	.imgBody {
+		display: none;
+	}
+
+	.introduction-button {
+		justify-self: center;
+	}
+
+	.introduction-container {
+		font-family: "Roboto";
+		display: grid;
+		grid-template-columns:  1fr 570px 1fr;
+		grid-template-rows: 180px 95px 150px auto;
+		min-height: 100vh;
+		grid-template-areas: ". h1 . " ". h2 . " ". button ." ". . .";
+		align-items: flex-end;
+	}
+}

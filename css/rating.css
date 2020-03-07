@@ -21,7 +21,18 @@ a {
     grid-area: button;
 }
 
+.template_oleg {
+    position: absolute;
+    background: url(../imgs/rating/ratings_wpg.png) no-repeat;
+    background-position: right;
+    right: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .template {
+    display: none;
     grid-area: t1;
     background-image: -moz-linear-gradient( -180deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
     background-image: -webkit-linear-gradient( -180deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
@@ -31,16 +42,17 @@ a {
     grid-column-end: auto;
     min-width: 400px;
     height: 95px;
-    z-index: 1;
 }
 
 .container-introduction {
+    position: relative;
+    z-index: -2;
     font-family: "Roboto";
     background-color: #EFEFEF;
     display: grid;
     grid-template-columns: 0.5fr 20px 430px 0.5fr 1fr 20px 0.5fr;
     grid-template-rows: 1.2fr repeat(4, 1fr) 1.2fr;
-    height: 570px;
+    height: 575px;
     grid-template-areas: ". . . . . . ." ". . h1  . t1 . ." ". . h2 . . . ." ". . . . . . ." ". . button . . . ." ". . . . . . .";
 }
 
