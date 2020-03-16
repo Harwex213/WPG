@@ -1,0 +1,199 @@
+:root {
+	--rem: 16px;
+}
+
+.avatar {
+	position: relative;
+	grid-area: avatar;
+	border-radius: 0 200% 200% 0;
+	border: 2px solid rgb(230, 230, 230);
+	background-image: url(../imgs/cards/RealWorld.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.avatar-number {
+	background-color: rgb(92, 92, 92);
+	position: absolute;
+	z-index: 1;
+	left: 7.5px;
+	top: 7.5px;
+	width: 4.75rem;
+	height: 4.375rem;
+	border-radius: 0 50px 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto";
+	font-size: 1.6875em;
+	color: rgb(197, 197, 197);
+}
+
+.aboutWPG {
+	position: relative;
+	grid-area: about;
+	font-family: "Open Sans";
+	color: #2b2b2b;
+	line-height: 1.473;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
+}
+
+.name, .type, .genre, .admin, .description {	
+	display: flex;
+	flex-direction: row;
+}
+
+.aboutWPG p:first-child {
+	font-weight: 400;
+	padding: 1.5625rem 0 1.5625rem 2.625rem;
+	width: 27rem;
+	background-image: -moz-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
+	background-image: -webkit-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
+	background-image: -ms-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
+	border: none;
+}
+
+.aboutWPG p {
+	font-size: 1.0625em;
+	color: rgb(43, 43, 43);
+	font-weight: 600;
+	padding: 1.5625rem;
+	width: 100%;
+	background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+	border-bottom: 2px solid rgb(230, 230, 230);
+}
+
+.description p:last-child {
+	border: none;
+}
+
+.column {
+	background-image: -moz-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+	background-image: -webkit-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+	background-image: -ms-linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+	border-radius: 100px 100px 0 0 ;
+	position: absolute;
+	left: -8.5px;
+	height: 100%;
+	width: 16px;
+}
+
+.link {
+	grid-area: link;
+	margin-top: 3.125rem;
+	width: 205px;	
+	height: 86px;
+	background-image: url(../imgs/button_cards.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto";
+	font-size: 1.25em;
+	font-weight: 900;
+	color: #111;
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+
+.link:hover {
+	background-image: url(../imgs/button_cards_hover.png);
+	color: #fff;
+}
+
+.link:active {
+	background-image: url(../imgs/button_cards_active.png);
+	color: #fff;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 23.75rem 1fr 6fr 1fr;
+	grid-template-rows: 1fr 23.75rem 2fr 1fr;
+	grid-template-areas: ". . . . ." ". avatar . about ." ". link . about ." ". . . . .";
+	min-height: 100vh;
+}
+
+main {
+	background-image: -moz-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+}
+
+
+@media screen and (max-width: 1024px) {
+	.container {
+		grid-template-columns: 1fr 23.75rem 6fr 1fr;
+		grid-template-rows: 1fr 23.75rem 0.5fr 8fr 1fr;
+		grid-template-areas: ". . . ." ". avatar link ." ". . . ." ". about about ." ". . . .";
+	}
+
+	.link {
+		margin: auto 0 auto 3.125rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		grid-template-columns: 0.1fr 1fr 23.75rem 1fr 0.1fr;
+		grid-template-rows: 3.125rem 23.75rem 10rem 1fr 3.125rem ;
+		grid-template-areas: ". . . . ." ". . avatar . ." ". . link . ." ". about about about ." ". . . . .";
+	}
+
+	.link {
+		margin: auto auto auto 0;
+	}
+
+	.aboutWPG {
+		margin: 1rem;
+	}
+
+	.aboutWPG p:first-child {
+		padding: 0.9375rem 0 0.9375rem 1.3125em;
+		max-width: 50%;
+	}
+
+	.aboutWPG p {
+		padding: 0.9375rem;
+	}
+
+	.column {
+		left: -4.5px;
+		width: 8px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		grid-template-columns: 0.1fr 1fr 16.25rem 1fr 0.1fr;
+		grid-template-rows: 3.125rem 16.25rem 0.2fr 1fr ;
+		grid-template-areas: ". . . . ." ". . avatar . ." ". . link . ." ". about about about .";
+	}
+
+	.aboutWPG {
+		margin-bottom: 3.125rem;
+	}
+
+	.aboutWPG p:first-child {
+		padding: 0.5rem 0 0.5rem 1rem;
+		max-width: 35%;
+		word-wrap: break-word;
+	}
+
+	.aboutWPG p {
+		padding: 0.5rem;
+	}
+
+	.avatar-number {
+		width: 3.5rem;
+		height: 3.125rem;
+	}
+
+	.link {
+		margin: auto auto auto 0;
+	}
+
+}

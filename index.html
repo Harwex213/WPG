@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/landing.css">
 	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/adaptive_landing.css">
 	<title>Каталог ВПИ</title>
 </head>
 
@@ -32,6 +32,7 @@
 				<a href="#" class="articles">Полезные статьи</a>
 				<a href="#" class="glossary">Глоссарий</a>
 			</nav>
+			<div class="navbar-burger"><span></span></div>
 		</div>
 	</header>
 
@@ -59,12 +60,12 @@
 				<div class="column column-5">
 					<p>#25</p>
 				</div>
-				<a href="" class="columns-button">Впервые слышите аббревиатуру ВПИ?</a>
+				<a href="#" class="columns-button" onclick="slowScroll ('#WPG')">Впервые слышите аббревиатуру ВПИ?</a>
 			</div>
 		</div>
 		<div class="about">
 			<div class="about-container">
-				<h2>ВПИ — Военно-Политическая Игра</h2>
+				<h2 id="WPG">ВПИ — Военно-Политическая Игра</h2>
 				<div class="about-paragraph">
 					<div class="about-paragraph-column"></div>
 					<div class="about-paragraph-text">
@@ -99,6 +100,8 @@
 			<a href="https://vk.com/catalogwpg"></a>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

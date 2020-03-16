@@ -8,7 +8,7 @@ footer {
 footer span {
 	grid-area: info;
 	color: #565656;
-	font-size: 16px;
+	font-size: 1em;
 }
 
 footer a {
@@ -33,4 +33,17 @@ footer .container {
 	grid-template-rows: 108px;
 	grid-template-areas: ". info . link .";
 	align-items: center;
+}
+
+@media screen and (max-width:768px)
+{
+	
+	footer .container {
+		display: grid;
+		grid-template-columns: 2fr auto 1.5fr auto 0.5fr;
+		grid-template-rows: 64px;
+		grid-template-areas: ". info . link .";
+		align-items: center;
+	}
+	
 }

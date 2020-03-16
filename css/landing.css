@@ -15,7 +15,7 @@
 	text-align: center;
 	color: #fff;
 	font-weight: 4	00;
-	font-size: 17px;
+	font-size: 1.05em;
 }
 
 .column-1 {
@@ -72,7 +72,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 300;
 	text-decoration: none;
 	color: #fff;
@@ -81,7 +81,7 @@
 .introduction h1 {
 	position: relative;
 	z-index: 2;
-	font-size: 42px;
+	font-size: 2.6em;
 	font-style: italic;
 	font-weight: 900;
 	color: #2b2b2b;
@@ -93,7 +93,7 @@
 	z-index: 2;
 	grid-area: h2;
 	font-family: "Open Sans";
-	font-size: 17px;
+	font-size: 1.05em;
 	font-weight: 600;
 	color: #2b2b2b;
 }
@@ -101,6 +101,7 @@
 .introduction {
 	background-image: url(../imgs/introduction_backgr.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .imgBody {
@@ -121,7 +122,7 @@
 	background-image: url(../imgs/button_landing.png);
 	text-decoration: none;
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #111;
 	transition: all 0.15s ease;
 	position: relative;
@@ -156,7 +157,7 @@
 .about-container h2 {
 	font-family: "Roboto";
 	grid-area: h2;
-	font-size: 42px;
+	font-size: 2.6em;
 	font-weight: 900;
 	font-style: italic;
 	color: #2b2b2b;
@@ -165,23 +166,24 @@
 
 .about-paragraph {
 	grid-area: paragraph;
-	margin-top: 50px;
+	margin-top: 3.1em;
 	position: relative;
 }
 
 .about-paragraph p {
-	padding-left: 50px;
+	padding-left: 2.2em;
 	padding-right: 5px;
+	padding-bottom: 1.7em;
+	line-height: 1.471;
 	font-weight: 600;
 	color: #2b2b2b;
 }
 
 .about-paragraph-text .first {
-	padding-top: 27px;
+	padding-top: 1.7em;
 }
 
 .about-paragraph-text {
-	background-image: url(../imgs/);
 	background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
@@ -195,15 +197,18 @@
 
 .about-paragraph-link {
 	background-image: url(../imgs/about_vk_link.png);
+	background-size: cover;
 	display: flex;
 	align-items: center;
-	margin-left: auto;
-	width: 669px;
-	height: 65px;
+	width: 100%;
+	height: 4em;
+}
+
+.about-paragraph-link p {
+	padding-bottom: 0px;
 }
 
 .about-paragraph-link a {
-	font-size: 17px;
 	color: #64758d;
 	font-style: italic;
 	font-weight: 700;
@@ -226,5 +231,5 @@
 	grid-template-columns: 1fr 675px 1fr;
 	grid-template-rows: 160px 500px auto;
 	grid-template-areas: ". h2 ." ". paragraph ." ". . .";
-	min-height: 810px;
+	min-height: 800px;
 }
