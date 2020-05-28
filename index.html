@@ -2,106 +2,123 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,900,900i&display=swap&subset=cyrillic"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/landing.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/adaptive_landing.css">
-	<title>Каталог ВПИ</title>
+	<title>Главная</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<base target="_blank">
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="https://vk.com/catalogwpg">
-					<div></div>
-				</a>
-				<a href="">
-					<div></div>
-				</a>
-			</div>
-			<nav class="navbar">
-				<a href="#" class="list">Список ВПИ</a>
-				<a href="#" class="people">Список личностей</a>
-				<a href="#" class="articles">Полезные статьи</a>
-				<a href="#" class="glossary">Глоссарий</a>
-			</nav>
-			<div class="navbar-burger"><span></span></div>
-		</div>
-	</header>
-
-	<main>
-		<div class="introduction">
-			<div class="introduction-container">
-				<h1>Желаете узнать о качестве любой ВПИ?</h1>
-				<h2>Переходите на рейтинговый список, где вы увидите активные ВПИ по своему вкусу</h2>
-				<a class="introduction-button" href="">Перейти на список ВПИ</a>
-				<div class="imgBody"></div>
-			</div>
-			<div class="columns">
-				<div class="column column-1">
-					<p>#4</p>
-				</div>
-				<div class="column column-2">
-					<p>#36</p>
-				</div>
-				<div class="column column-3">
-					<p>#18</p>
-				</div>
-				<div class="column column-4">
-					<p>#1</p>
-				</div>
-				<div class="column column-5">
-					<p>#25</p>
-				</div>
-				<a href="#" class="columns-button" onclick="slowScroll ('#WPG')">Впервые слышите аббревиатуру ВПИ?</a>
-			</div>
-		</div>
-		<div class="about">
-			<div class="about-container">
-				<h2 id="WPG">ВПИ — Военно-Политическая Игра</h2>
-				<div class="about-paragraph">
-					<div class="about-paragraph-column"></div>
-					<div class="about-paragraph-text">
-						<p class="first">Не следует, однако забывать, что дальнейшее развитие различных форм
-							деятельности способствует
-							подготовки и реализации форм развития. Равным образом консультация с широким активом требуют
-							определения и уточнения модели развития. С другой стороны постоянное
-							информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу
-							(специалистов) участие в формировании позиций, занимаемых участниками в отношении
-							поставленных
-							задач.</p>
-						<p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-							деятельности
-							обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
-							Товарищи!
-							сложившаяся структура организации представляет собой интересный эксперимент проверки
-							направлений
-							прогрессивного развития.</p>
-						<div class="about-paragraph-link">
-							<p>Для подробностей вы можете зайти в группу — <a href="https://vk.com/catalogwpg">Каталог
-									ВПИ</a></p>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="header-body">
+					<div class="logos">
+						<a href="#" class="logos_logo">
+							<img src="img/header/logo.png" alt="Logo of Catalog WPG" class="logos__img">
+							<img src="img/header/logo_hover.png" alt="Logo hover of Catalog WPG"
+								class="logos__img-hover">
+						</a>
+						<a href="#" class="logos__bestWPG">
+							<img src="img/header/best_wpg.png" alt="Logo of Best WPG" class="logos__img">
+							<img src="img/header/best_wpg_hover.png" alt="Logo hover of Best WPG"
+								class="logos__img-hover">
+						</a>
+					</div>
+					<div class="navbar">
+						<div class="navbar__links navbar__links-list">
+							<img src="img/header/list.png" alt="" class="navbar__navimg">
+							<a href="rating.html" class="navbar__link">Список ВПИ</a>
 						</div>
+						<div class="navbar__links navbar__links-news">
+							<img src="img/header/news.png" alt="" class="navbar__navimg">
+							<a href="#" class="navbar__link">Новости</a>
+						</div>
+						<div class="navbar__links navbar__links-articles">
+							<img src="img/header/articles.png" alt="" class="navbar__navimg">
+							<a href="#" class="navbar__link">Полезные статьи</a>
+						</div>
+						<div class="navbar__links navbar__links-glossary">
+							<img src="img/header/glossary.png" alt="" class="navbar__navimg">
+							<a href="#" class="navbar__link">Глоссарий</a>
+						</div>
+					</div>
+					<div class="burger"><span></span></div>
+				</div>
+			</div>
+		</header>
+		<section class="introduction">
+			<img src="img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg">
+			<div class="container">
+				<h1 class="title introduction__title">Желаете узнать о качестве любой ВПИ?</h1>
+				<p class="subtitle introduction__subtitle">Переходите на рейтинговый список, где вы увидите активные ВПИ
+					по своему вкусу</p>
+				<div class="button introduction__button">
+					<a href="" class="button__text introduction__button-text">Перейти на список ВПИ</a>
+					<img src="img/index/button.png" alt="" class="button__background">
+					<img src="img/index/button_hover.png" alt="" class="button__background button__background-hover">
+				</div>
+				<div class="columns introduction__columns">
+					<div class="columns__container">
+						<div class="columns__column columns__column-1">#4</div>
+						<div class="columns__column columns__column-2">#36</div>
+						<div class="columns__column columns__column-3">#18</div>
+						<div class="columns__column columns__column-4">#1</div>
+						<div class="columns__column columns__column-5">#25</div>
+						<div class="columns__title">Впервые слышите аббревиатуру ВПИ?</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
-
-	<footer>
-		<div class="container">
-			<span>© 2020 Каталог ВПИ</span>
-			<a href="https://vk.com/catalogwpg"></a>
-		</div>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h1 class="title about__title">ВПИ — Военно-Политическая Игра</h1>
+				<div class="paragraph about__paragraph">
+					<div class="paragraph__line"></div>
+					<p class="paragraph__text">Не следует, однако забывать, что дальнейшее развитие различных форм
+						деятельности способствует подготовки и реализации форм развития. Равным образом консультация с
+						широким активом требуют определения и уточнения модели развития. С другой стороны постоянное
+						информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу
+						(специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных
+						задач.</p>
+					<p class="paragraph__text">Значимость этих проблем настолько очевидна, что дальнейшее развитие
+						различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании
+						новых предложений. Товарищи! сложившаяся структура организации представляет собой интересный
+						эксперимент проверки направлений прогрессивного развития.</p>
+					<div class="paragraph__details">
+						<p class="paragraph__text paragraph__text-details">Для подробностей вы можете зайти в группу —
+							<a href="" class="paragraph__text-link">Каталог ВПИ</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer-body">
+					<p class="footer-body__text">
+						© 2020 Каталог ВПИ
+					</p>
+					<a href="" class="footer-body__link">
+						<img src="img/footer/linkCatalog.png" alt="" class="footer-body__linkCatalog">
+						<img src="img/footer/linkCatalog_hover.png" alt="" class="footer-body__linkCatalog-hover">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script>
+	<script src="js/vendors.js"></script>
+	<script src="js/main-dist.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>

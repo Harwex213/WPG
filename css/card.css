@@ -2,12 +2,19 @@
 	--rem: 16px;
 }
 
+/* КОСТЫЛЬ!!! */
+.container {
+	max-width: 100%;
+    margin: auto;
+    width: 100%;
+}
+
 .avatar {
 	position: relative;
 	grid-area: avatar;
 	border-radius: 0 200% 200% 0;
 	border: 2px solid rgb(230, 230, 230);
-	background-image: url(../imgs/cards/RealWorld.png);
+	background-image: url(../img/cards/RealWorld.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -87,7 +94,7 @@
 	margin-top: 3.125rem;
 	width: 205px;	
 	height: 86px;
-	background-image: url(../imgs/button_cards.png);
+	background-image: url(../img/cards/button_cards.png);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,12 +107,12 @@
 }
 
 .link:hover {
-	background-image: url(../imgs/button_cards_hover.png);
+	background-image: url(../img/cards/button_cards_hover.png);
 	color: #fff;
 }
 
 .link:active {
-	background-image: url(../imgs/button_cards_active.png);
+	background-image: url(../img/cards/button_cards_active.png);
 	color: #fff;
 }
 
