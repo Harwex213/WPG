@@ -1,66 +1,34 @@
+<?php $path = ''?>
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Index</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="css/index.css">
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow" /> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<base target="_blank">
+	<!--LINKS-CSS INCLUDE-->
+	<?php include ("blocks/link_css.php")?>
+	<link rel="stylesheet" href="css/index.css">
+	<!--/LINKS-CSS INCLUDE-->
 </head>
 
 <body>
 	<div class="wrapper">
-		<header>
-			<div class="container">
-				<div class="header-body">
-					<div class="logos">
-						<a href="#" class="logos_logo">
-							<img src="img/header/logo.png" alt="Logo of Catalog WPG" class="logos__img">
-							<img src="img/header/logo_hover.png" alt="Logo hover of Catalog WPG"
-								class="logos__img-hover">
-						</a>
-						<a href="#" class="logos__bestWPG">
-							<img src="img/header/best_wpg.png" alt="Logo of Best WPG" class="logos__img">
-							<img src="img/header/best_wpg_hover.png" alt="Logo hover of Best WPG"
-								class="logos__img-hover">
-						</a>
-					</div>
-					<div class="navbar">
-						<div class="navbar__links navbar__links-list">
-							<img src="img/header/list.png" alt="" class="navbar__navimg">
-							<a href="rating.html" class="navbar__link">Список ВПИ</a>
-						</div>
-						<div class="navbar__links navbar__links-news">
-							<img src="img/header/news.png" alt="" class="navbar__navimg">
-							<a href="#" class="navbar__link">Новости</a>
-						</div>
-						<div class="navbar__links navbar__links-articles">
-							<img src="img/header/articles.png" alt="" class="navbar__navimg">
-							<a href="#" class="navbar__link">Полезные статьи</a>
-						</div>
-						<div class="navbar__links navbar__links-glossary">
-							<img src="img/header/glossary.png" alt="" class="navbar__navimg">
-							<a href="#" class="navbar__link">Глоссарий</a>
-						</div>
-					</div>
-					<div class="burger"><span></span></div>
-				</div>
-			</div>
-		</header>
-		<section class="introduction">
+	<!--HEADER INCLUDE-->
+	<?php include ("blocks/header.php")?>
+	<!--/HEADER INCLUDE-->
+	<!--MAIN-->
+	<section class="introduction">
 			<img src="img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg">
 			<div class="container">
 				<h1 class="title introduction__title">Желаете узнать о качестве любой ВПИ?</h1>
 				<p class="subtitle introduction__subtitle">Переходите на рейтинговый список, где вы увидите активные ВПИ
 					по своему вкусу</p>
 				<div class="button introduction__button">
-					<a href="" class="button__text introduction__button-text">Перейти на список ВПИ</a>
+					<a href="rating" class="button__text introduction__button-text">Перейти на список ВПИ</a>
 					<img src="img/index/button.png" alt="" class="button__background">
 					<img src="img/index/button_hover.png" alt="" class="button__background button__background-hover">
 				</div>
@@ -98,27 +66,15 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="container">
-				<div class="footer-body">
-					<p class="footer-body__text">
-						© 2020 Каталог ВПИ
-					</p>
-					<a href="" class="footer-body__link">
-						<img src="img/footer/linkCatalog.png" alt="" class="footer-body__linkCatalog">
-						<img src="img/footer/linkCatalog_hover.png" alt="" class="footer-body__linkCatalog-hover">
-					</a>
-				</div>
-			</div>
-		</footer>
+	<!--/MAIN-->
+	<!--FOOTER INCLUDE-->
+	<?php include ("blocks/footer.php")?>
+	<!--/FOOTER INCLUDE-->
+	<!--MADE BY HARWEX213 (Oleg Kaportsev) AND GARIKMOGILEV (Igot Skvortsov)-->
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script>
-	<script src="js/vendors.js"></script>
-	<script src="js/main-dist.js"></script>
-	<script src="js/custom.js"></script>
+	<!--JS FILES INCLUDE-->
+	<?php include ("blocks/js.php")?>
+	<!--/JS FILES INCLUDE-->
 </body>
 
 </html>
