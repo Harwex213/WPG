@@ -5,8 +5,8 @@
 				© 2020 Каталог ВПИ
 			</p>
 			<a href="" class="footer-body__link">
-				<img src="<?php echo $path?>img/footer/linkCatalog.png" alt="" class="footer-body__linkCatalog">
-				<img src="<?php echo $path?>img/footer/linkCatalog_hover.png" alt="" class="footer-body__linkCatalog-hover">
+				<img src="../img/footer/linkCatalog.png" alt="" class="footer-body__linkCatalog">
+				<img src="../img/footer/linkCatalog_hover.png" alt="" class="footer-body__linkCatalog-hover">
 			</a>
 		</div>
 	</div>
