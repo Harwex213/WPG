@@ -22,6 +22,7 @@
 	<!--/HEADER INCLUDE-->
 	<!--MAIN-->
 	<section class="introduction">
+	
 			<img src="../img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg">
 			<div class="container">
 				<h1 class="title introduction__title">Желаете узнать о качестве любой ВПИ?</h1>
