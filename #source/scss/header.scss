@@ -1,0 +1,223 @@
+@import "template.scss";
+@keyframes scroll_logos { from { transform: scale(1); } to { transform: scale(0.72) }}
+@keyframes unscroll_logos { from { transform: scale(0.72); } to { transform: scale(1) }}
+//====================================================================================================
+.header {
+	box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
+	background-image: linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+	position: fixed;
+	z-index: 100;
+	min-width: 100%;
+	&.scroll {
+		@media (min-width:$md2+px) {
+			.header-body {
+				height: 80px;
+			}
+			.navbar {
+				&__navimg {
+					display: none;
+				}
+			}
+		}
+	}
+}
+//====================================================================================================
+.header-body {
+	@include flexbox();
+	height: 108px;
+	align-items: center;
+	transition: all 0.4s ease;
+	//media---------------------
+	@media (max-width:$md2+px) {
+		height: 80px;
+	}
+	@media (max-width:$md3+px) {
+		height: 60px;
+	}
+}
+.logos {
+	@include flexbox();
+	align-items: center;
+	//media---------------------
+	@media (max-width:$md3+px) {
+		min-width: 110px;
+		justify-content: space-between;
+	}
+		&_logo {
+			position: relative;
+			object-fit: cover;
+		}
+		&__bestWPG {
+			position: relative;
+			margin-left: 32px;
+			object-fit: cover;
+			//media---------------------
+			@media (max-width:$md2+px) {
+				margin-left: 16px;
+			}
+			@media (max-width:$md3+px) {
+				margin: 0px;
+			}
+		}
+		&__img {	
+			position: relative;
+			z-index: 12;
+			border-radius: 50%;
+			//media---------------------
+			@media (max-width:$md2+px) {
+				height: 70px;
+				width: 70px;
+			}
+			@media (max-width:$md3+px) {
+				height: 50px;
+				width: 50px;
+			}
+		}
+		&__img-avatar {
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			width: calc(100% - 4px);
+			height: calc(100% - 4px);
+			border-radius: 50%;
+			z-index: 11;
+			object-fit: cover;
+		}
+		&__img-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 13;
+			opacity: 0;
+			transition: all 0.15s ease;
+			&:hover {
+				opacity: 1;
+			}
+		}
+}
+.navbar {
+	@include flexbox();
+	width: 100%;
+	justify-content: flex-end;
+	font-size: 1em;
+	transition: all 1s ease;
+	//media---------------------
+	@media (max-width:$md2+px) {
+		justify-content: flex-end;
+		align-items: center;
+	}
+	@media (max-width:$md3+px) {
+		position: fixed;
+		overflow: auto;
+		font-size: 32px;
+		position: fixed;
+		align-items: center;
+		z-index: 10;
+		margin-top: 59px;
+		display: block;
+		top: 0;
+		left: -150%;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+		transition: all 0.5s ease 0s;
+		&.active {
+			left: 0;
+		}
+	}
+		&__links-list {
+			width: 152px;
+		}
+		&__links-news {
+			width: 201px;
+		}
+		&__links-articles {
+			width: 192px;
+		}
+		&__links-glossary {
+			width: 139px;
+		}
+		&__links {
+			@include flexbox();
+			justify-content: center;
+			align-items: center;
+			//media---------------------
+			@media (max-width:$md2+px) {
+				width: auto;
+			}
+			@media (max-width:$md3+px) {
+				display: block;
+				padding-top: 20px;
+			}
+		}
+		&__navimg {
+			position: absolute;
+			opacity: 0;
+			transition: all 0.3s ease;
+			//media---------------------
+			@media (max-width:$md2+px) {
+				display: none;
+			}
+		}
+		&__link {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+			font-weight: 300;
+			//media---------------------
+			@media (max-width:$md2+px) {
+				width: auto;
+				margin: 0 20px;
+			}
+		}
+}
+.burger {
+	display: none;
+	//media---------------------
+	@media (max-width:$md3+px) {
+		display: block;
+		position: relative;
+		z-index: 13;
+		width: 30px;
+		height: 20px;
+		margin: 0 16px 0 auto;
+		&:after, &:before {
+			content: '';
+			background-color: #fff;
+			position: absolute;
+			width: 100%;
+			height: 1.4px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&::after {
+			top: 0;
+		}
+		&.active::after {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		&::before {
+			bottom: 0;
+		}
+		&.active::before {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+		& span {
+			position: absolute;
+			background-color: #fff;
+			left: 0;
+			width: 100%;
+			height: 1.8px;
+			top: 9.2px;
+			transition: all 0.3s ease 0s;
+		}
+		&.active span {
+			transform: scale(0);
+		}
+	}
+}
+//====================================================================================================

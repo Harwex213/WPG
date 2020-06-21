@@ -1,296 +1,727 @@
+@charset "UTF-8";
+/* line 30, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+/* line 31, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 32, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+:focus, :active {
+  outline: none;
+}
+
+/* line 33, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+a:focus, a:active {
+  outline: none;
+}
+
+/* line 34, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+aside, nav, footer, header, section {
+  display: block;
+}
+
+/* line 35, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  color: #000;
+}
+
+/* line 36, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Open Sans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 37, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+body.lock {
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  /* line 37, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+/* line 45, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+input, button, textarea {
+  font-family: "Open Sans";
+}
+
+/* line 46, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+input::-ms-clear {
+  display: none;
+}
+
+/* line 47, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 48, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 49, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+a, a:visited {
+  text-decoration: none;
+}
+
+/* line 50, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 51, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 52, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 53, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* line 57, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.row:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 58, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.rub:after {
+  content: '₽';
+}
+
+/* line 60, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 62, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+ol.counter {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+/* line 63, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+ol.counter li {
+  position: relative;
+  padding: 0px 0px 0px 45px;
+}
+
+/* line 64, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+ol.counter li:before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #818181;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #4274bb;
+}
+
+/* line 68, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 69, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.es {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 71, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.table {
+  display: table;
+  font-size: 0;
+  width: 100%;
+}
+
+/* line 74, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.trow {
+  display: table-row;
+}
+
+/* line 75, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.cell {
+  display: table-cell;
+}
+
+/* line 76, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.cell.full {
+  width: 100%;
+}
+
+/* line 79, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.ibg img {
+  display: none;
+}
+
+/* line 83, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.video {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+/* line 84, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.video video, .video iframe, .video object, .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 87, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.videobg video, .videobg iframe, .videobg object, .videobg embed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+/* line 90, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext {
+  overflow: hidden;
+}
+
+/* line 91, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more {
+  cursor: pointer;
+}
+
+/* line 92, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more i {
+  font-style: normal;
+}
+
+/* line 93, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more i:first-child {
+  display: block;
+}
+
+/* line 94, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more i:last-child {
+  display: none;
+}
+
+/* line 97, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more.active i {
+  font-style: normal;
+}
+
+/* line 98, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more.active i:first-child {
+  display: none;
+}
+
+/* line 99, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.moretext__more.active i:last-child {
+  display: block;
+}
+
+/* line 104, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.graystyle {
+  transition: all 0.8s ease 0s;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
+
+/* line 105, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.graystyleoff {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+}
+
+/* line 107, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.slick-slider {
+  position: relative;
+}
+
+/* line 108, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.slick-slider .slick-track, .slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 109, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.slick-slider .slick-list {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 110, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.slick-slider .slick-track {
+  position: relative;
+  width: 100%;
+}
+
+/* line 111, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.slick-slider .slick-slide {
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+/* line 122, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.tab__item {
+  display: none;
+}
+
+/* line 123, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.tab__item.active {
+  display: block;
+}
+
+/* line 126, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.mirror {
+  transform: scale(-1, 1);
+}
+
+/* line 128, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.nicescroll-rails {
+  z-index: 1000 !important;
+}
+
+/* line 131, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.gm-style-iw-t {
+  opacity: 0;
+}
+
+/* line 132, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon {
+  opacity: 1;
+  right: -7px !important;
+  bottom: 80px !important;
+}
+
+/* line 133, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon button {
+  display: none !important;
+}
+
+/* line 134, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon:after {
+  display: none !important;
+}
+
+/* line 136, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon-style {
+  display: none;
+}
+
+/* line 137, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon-content.gm-style-iw {
+  opacity: 1;
+  border-radius: 0px !important;
+  max-width: 300px !important;
+  padding: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  overflow: visible !important;
+}
+
+/* line 145, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon-content.gm-style-iw > .gm-style-iw-d {
+  overflow: hidden !important;
+  max-width: none !important;
+}
+
+/* line 146, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon-content.gm-style-iw:after {
+  display: none !important;
+}
+
+/* line 149, ../../../../../../Denwer/home/test1.ru/www/#source/scss/template.scss */
+.baloon-close {
+  top: 18px !important;
+}
+
 @keyframes scroll_logos {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0.72);
-    }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.72);
+  }
 }
 
 @keyframes unscroll_logos {
-    from {
-        transform: scale(0.72);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0.72);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
+/* line 5, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
 .header {
-    box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(-176deg, #12100b 0%, #1c1c1c 100%);
-    position: fixed;
-    z-index: 100;
-    min-width: 100%;
-    transform: scale(1);
+  box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(-176deg, #12100b 0%, #1c1c1c 100%);
+  position: fixed;
+  z-index: 100;
+  min-width: 100%;
 }
 
 @media (min-width: 992.98px) {
-    .header.scroll .header-body {
-        height: 80px;
-    }
-    .header.scroll .logos__img,
-    .header.scroll .logos__img-hover,
-    .header.scroll .logos__img-border {
-        animation: scroll_logos 0.4s;
-        transform: scale(0.72);
-    }
-}
-
-.header-body {
-    display: flex;
-    height: 108px;
-    align-items: center;
-    transition: all 0.4s ease;
-}
-
-@media (max-width: 992.98px) {
-    .header-body {
-        height: 80px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .header-body {
-        height: 60px;
-    }
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 767.98px) {
-    .logos {
-        min-width: 110px;
-        justify-content: space-between;
-    }
-}
-
-.logos_logo {
-    position: relative;
-    object-fit: cover;
-}
-
-.logos__bestWPG {
-    position: relative;
-    margin-left: 32px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-@media (max-width: 992.98px) {
-    .logos__bestWPG {
-        margin-left: 16px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .logos__bestWPG {
-        margin: 0px;
-    }
-}
-
-@media (max-width: 992.98px) {
-    .logos__img {
-        height: 70px;
-        width: 70px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .logos__img {
-        height: 50px;
-        width: 50px;
-    }
-}
-
-.logos__img_hover {
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    border: 6px solid #464646, 2px solid black;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    opacity: 0;
-    transition: all 0.15s ease;
-}
-
-.logos__img-hover {
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    border: 6px solid #464646, 2px solid black;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    opacity: 0;
-    transition: all 0.15s ease;
-}
-
-.logos__img-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 7;
-    transition: all 0.15s ease;
-}
-
-.logos__img_hover:hover {
-    opacity: 1;
-}
-
-.navbar {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    font-size: 1em;
-    transition: all 1s ease;
-}
-
-@media (max-width: 992.98px) {
-    .navbar {
-        justify-content: flex-end;
-        align-items: center;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .navbar {
-        position: fixed;
-        overflow: auto;
-        font-size: 32px;
-        position: fixed;
-        align-items: center;
-        z-index: 10;
-        margin-top: 59px;
-        display: block;
-        top: 0;
-        left: -150%;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(-176deg, #12100b 0%, #1c1c1c 100%);
-        transition: all 0.5s ease 0s;
-    }
-    .navbar.active {
-        left: 0;
-    }
-}
-
-.navbar__links-list {
-    width: 152px;
-}
-
-.navbar__links-news {
-    width: 201px;
-}
-
-.navbar__links-articles {
-    width: 192px;
-}
-
-.navbar__links-glossary {
-    width: 139px;
-}
-
-.navbar__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 992.98px) {
-    .navbar__links {
-        width: auto;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .navbar__links {
-        display: block;
-        padding-top: 20px;
-    }
-}
-
-.navbar__navimg {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-@media (max-width: 992.98px) {
-    .navbar__navimg {
-        display: none;
-    }
-}
-
-.navbar__link {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    font-weight: 300;
-}
-
-@media (max-width: 992.98px) {
-    .navbar__link {
-        width: auto;
-        margin: 0 20px;
-    }
-}
-
-.burger {
+  /* line 13, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .header.scroll .header-body {
+    height: 80px;
+  }
+  /* line 17, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .header.scroll .navbar__navimg {
     display: none;
+  }
+}
+
+/* line 25, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.header-body {
+  display: flex;
+  height: 108px;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 992.98px) {
+  /* line 25, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .header-body {
+    height: 80px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .burger {
-        display: block;
-        position: relative;
-        z-index: 13;
-        width: 30px;
-        height: 20px;
-        margin: 0 16px 0 auto;
-    }
-    .burger:after,
-    .burger:before {
-        content: "";
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 1.4px;
-        left: 0;
-        transition: all 0.3s ease 0s;
-    }
-    .burger::after {
-        top: 0;
-    }
-    .burger.active::after {
-        transform: rotate(45deg);
-        top: 9px;
-    }
-    .burger::before {
-        bottom: 0;
-    }
-    .burger.active::before {
-        transform: rotate(-45deg);
-        bottom: 9px;
-    }
-    .burger span {
-        position: absolute;
-        background-color: #fff;
-        left: 0;
-        width: 100%;
-        height: 1.8px;
-        top: 9.2px;
-        transition: all 0.3s ease 0s;
-    }
-    .burger.active span {
-        transform: scale(0);
-    }
+  /* line 25, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .header-body {
+    height: 60px;
+  }
+}
+
+/* line 38, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  /* line 38, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .logos {
+    min-width: 110px;
+    justify-content: space-between;
+  }
+}
+
+/* line 46, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos_logo {
+  position: relative;
+  object-fit: cover;
+}
+
+/* line 50, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos__bestWPG {
+  position: relative;
+  margin-left: 32px;
+  object-fit: cover;
+}
+
+@media (max-width: 992.98px) {
+  /* line 50, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .logos__bestWPG {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 50, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .logos__bestWPG {
+    margin: 0px;
+  }
+}
+
+/* line 62, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos__img {
+  position: relative;
+  z-index: 12;
+  border-radius: 50%;
+}
+
+@media (max-width: 992.98px) {
+  /* line 62, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .logos__img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 62, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .logos__img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* line 76, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos__img-avatar {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  z-index: 11;
+  object-fit: cover;
+}
+
+/* line 86, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos__img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+
+/* line 95, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.logos__img-hover:hover {
+  opacity: 1;
+}
+
+/* line 100, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 1em;
+  transition: all 1s ease;
+}
+
+@media (max-width: 992.98px) {
+  /* line 100, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 100, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar {
+    position: fixed;
+    overflow: auto;
+    font-size: 32px;
+    position: fixed;
+    align-items: center;
+    z-index: 10;
+    margin-top: 59px;
+    display: block;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-176deg, #12100b 0%, #1c1c1c 100%);
+    transition: all 0.5s ease 0s;
+  }
+  /* line 126, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar.active {
+    left: 0;
+  }
+}
+
+/* line 130, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__links-list {
+  width: 152px;
+}
+
+/* line 133, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__links-news {
+  width: 201px;
+}
+
+/* line 136, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__links-articles {
+  width: 192px;
+}
+
+/* line 139, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__links-glossary {
+  width: 139px;
+}
+
+/* line 142, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992.98px) {
+  /* line 142, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar__links {
+    width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 142, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar__links {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+/* line 155, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__navimg {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992.98px) {
+  /* line 155, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar__navimg {
+    display: none;
+  }
+}
+
+/* line 164, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.navbar__link {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-weight: 300;
+}
+
+@media (max-width: 992.98px) {
+  /* line 164, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .navbar__link {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+/* line 176, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+.burger {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  /* line 176, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger {
+    display: block;
+    position: relative;
+    z-index: 13;
+    width: 30px;
+    height: 20px;
+    margin: 0 16px 0 auto;
+  }
+  /* line 186, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger:after, .burger:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 1.4px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  /* line 195, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger::after {
+    top: 0;
+  }
+  /* line 198, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger.active::after {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  /* line 202, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger::before {
+    bottom: 0;
+  }
+  /* line 205, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger.active::before {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  /* line 209, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 1.8px;
+    top: 9.2px;
+    transition: all 0.3s ease 0s;
+  }
+  /* line 218, ../../../../../../Denwer/home/test1.ru/www/#source/scss/header.scss */
+  .burger.active span {
+    transform: scale(0);
+  }
 }

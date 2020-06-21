@@ -1,0 +1,50 @@
+@import "template.scss";
+
+footer{
+	background-image: linear-gradient( -176deg, rgb(18,16,11) 0%, rgb(28,28,28) 100%);
+}
+//====================================================================================================
+.footer-body {
+	@include flexbox();
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 108px;
+	&__text {
+		margin: 0 auto;
+		color: rgb(86, 86, 86);
+		line-height: 1.2;
+	}
+	&__link {
+		position: relative;
+	}
+
+	&__linkCatalog {
+		@media (max-width:$md3+px) {
+			height: 40px;
+		}
+	}
+
+	&__linkCatalog-hover {
+		transition: all 0.15s ease;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		
+		@media (max-width:$md3+px) {
+			height: 40px;
+		}
+	}
+	//media---------------------
+	@media (max-width:$md2+px) {
+		height: 80px;
+	}
+	@media (max-width:$md3+px) {
+		height: 60px;
+	}
+}
+
+//====================================================================================================
+

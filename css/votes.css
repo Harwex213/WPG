@@ -138,9 +138,9 @@ div.vote_buttons>a.vote_down:hover {
 .voted {
     font-size: 72px;
     text-align: center;
-    display: block;
-    position: relative;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 140px;
     font-weight: bold;
@@ -151,9 +151,9 @@ div.vote_buttons>a.vote_down:hover {
 .notVoted {
     font-size: 72px;
     text-align: center;
-    display: block;
-    position: relative;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 140px;
     font-weight: bold;

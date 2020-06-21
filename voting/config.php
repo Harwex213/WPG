@@ -1,8 +1,14 @@
 <?php
-$hostname = "127.0.0.1";
-$db_username = "root";
-$db_password = "";
+/*данные для входа в MySQLi*/
+$hostname = 'custom';
+$db_username = 'root';
+$db_password = 'root';
+$db_name = 'wpi';
+/***************************/
 
-$link = mysql_connect($hostname, $db_username, $db_password) or die("Cannot connect to the database");
-mysql_select_db("phpmyadmin") or die("Cannot select the database");
+//обработка ошибок реализованная в php7
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+//подключение к БД
+$mysqli = new mysqli($hostname, $db_username, $db_password,$db_name) ;
 ?>
