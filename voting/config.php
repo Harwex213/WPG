@@ -1,6 +1,6 @@
 <?php
 /*данные для входа в MySQLi*/
-$hostname = 'custom';
+$hostname = 'WPG';
 $db_username = 'root';
 $db_password = 'root';
 $db_name = 'wpi';
