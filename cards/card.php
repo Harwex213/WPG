@@ -27,8 +27,8 @@ $position_page_voting = 0;
 <?php include ("../blocks/header.php")?>
 <div class="wrapper"> 
 <?php
-$bd_sort_decs = 'SELECT * FROM entries order by votes DESC';
-$r_sort = $mysqli->query($bd_sort_decs);
+$bd_sort_desc = 'SELECT * FROM entries order by votes DESC';
+$r_sort = $mysqli->query($bd_sort_desc);
 
 for($i = 0;$row_sort = mysqli_fetch_assoc($r_sort);$i++){
 	if($row_sort['id'] == $id){
