@@ -1,5 +1,7 @@
 //<-------------------------------<HEADER>------------------------------->
 //mouseover on links
+
+
 $('.navbar__links-list .navbar__link').mouseover(function () {
     $('.navbar__links-list .navbar__navimg').css('opacity', 1);
 })

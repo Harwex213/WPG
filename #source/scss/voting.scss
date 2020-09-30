@@ -26,15 +26,17 @@
 	width: 100%;
 	position: relative;
 	margin-top: 108px;
-	background-image: url(../img/voting/about_backgr.jpg);
-	background-size: cover;
+	// Нужно вставить в чистый css!
+	// background-image: -moz-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	// background-image: -webkit-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	// background-image: -ms-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%)
 	& .container {
 		position: relative;
 		display: grid;
 		grid-template-columns: 0.9fr 0.1fr 1fr;
 		grid-template-rows: 1fr auto 0.3fr auto 1fr auto 2fr;
 		grid-template-areas: ". . ." "title title ." ". . ." "subtitle . ." ". . ." " button . .";	
-		@media (max-width:$md2+px) {
+		@media (max-width:$md1+px) {
 			grid-template-rows: 1fr auto 0.1fr auto 0.3fr auto 1fr;
 			grid-template-areas: ". . ." "title title title" ". . ." "subtitle subtitle subtitle" ". . ." " button button button";	
 		}
@@ -43,11 +45,8 @@
 		position: absolute;
 		z-index: 0;
 		right: 2%;
-		top: 15%;
+		top: 17%;
 		@media (max-width:$md1+px) {
-			right: -100px;
-		}
-		@media (max-width:$md2+px) {
 			display: none;
 		}
 	}
@@ -73,7 +72,9 @@
 			padding: 1.875rem 1.875rem;
 		}
 	}
-
+	@media (min-width:$md1+px) {
+		min-height: calc(570px + 80px);
+	}
 	@media (max-width:$md2+px) {
 		min-height: calc(100vh - 80px);
 		margin-top: 80px;
@@ -83,6 +84,61 @@
 		margin-top: 50px;
 	}
 }
+
+.list {
+	display: flex;
+	flex-direction: column;
+	&__title {
+		margin: 6.25rem auto;
+	}
+
+	&__rank {
+
+	}
+}
+.rank {
+
+	&__area {
+
+	}
+
+	&__fraction {
+	}
+}
+.area {
+
+	&__info {
+	}
+
+	&__info-gold {
+	}
+
+	&__strip {
+	}
+
+	&__strip-center {
+	}
+
+	&__strip-left {
+	}
+
+	&__strip-down {
+	}
+
+	&__info-silver {
+	}
+
+	&__info-bronz {
+	}
+
+	&__info-common {
+	}
+
+	&__info-trash {
+	}
+}
+
+
 .title {
 	font-size: 2.625em;
 	font-family: $fontTitle;
