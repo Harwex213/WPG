@@ -26,15 +26,17 @@
 	width: 100%;
 	position: relative;
 	margin-top: 108px;
-	background-image: url(../img/voting/about_backgr.jpg);
-	background-size: cover;
+	// Нужно вставить в чистый css!
+	// background-image: -moz-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	// background-image: -webkit-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	// background-image: -ms-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%)
 	& .container {
 		position: relative;
 		display: grid;
 		grid-template-columns: 0.9fr 0.1fr 1fr;
 		grid-template-rows: 1fr auto 0.3fr auto 1fr auto 2fr;
 		grid-template-areas: ". . ." "title title ." ". . ." "subtitle . ." ". . ." " button . .";	
-		@media (max-width:$md2+px) {
+		@media (max-width:$md1+px) {
 			grid-template-rows: 1fr auto 0.1fr auto 0.3fr auto 1fr;
 			grid-template-areas: ". . ." "title title title" ". . ." "subtitle subtitle subtitle" ". . ." " button button button";	
 		}
@@ -43,11 +45,8 @@
 		position: absolute;
 		z-index: 0;
 		right: 2%;
-		top: 15%;
+		top: 17%;
 		@media (max-width:$md1+px) {
-			right: -100px;
-		}
-		@media (max-width:$md2+px) {
 			display: none;
 		}
 	}
@@ -73,7 +72,9 @@
 			padding: 1.875rem 1.875rem;
 		}
 	}
-
+	@media (min-width:$md1+px) {
+		min-height: calc(570px + 80px);
+	}
 	@media (max-width:$md2+px) {
 		min-height: calc(100vh - 80px);
 		margin-top: 80px;
@@ -83,6 +84,305 @@
 		margin-top: 50px;
 	}
 }
+
+.list {
+	background-image: linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	//background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	//background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	//background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	& .container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin: 6.25rem auto 5rem auto;
+	}
+
+	&__rank {
+		display: flex;
+		justify-content: center;
+		margin: 2rem 0;
+	}
+
+	&__sample {
+		margin: 15px 0;
+	}
+}
+
+.rank {
+	&__area {
+	}
+
+	&__fraction {
+		font-size: 4.0625em;
+		font-family: "Roboto";
+		color: rgb(213, 213, 213);
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	&__fraction-left {
+		position: absolute;
+		right: 0;
+	}
+}
+.area {
+	display: flex;
+	position: relative;
+	&__info {
+		display: flex;
+		position: relative;
+		z-index: 2;
+		border-radius: calc(3.5625rem/2);
+		justify-content: center;
+		align-items: center;
+		font-family: "Roboto";
+		font-size: 30px;
+		letter-spacing: 0.8px;
+		font-weight: 800;
+		height: 57px;
+	}
+	
+	&__info-gold {
+		color: rgb(206, 174, 57);
+		background-image: linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		width: 108px;
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	}
+
+	
+	&__info-silver {
+		color: rgb(134, 141, 160);
+		background-image: linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		width: 124px;
+		// background-image: -moz-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+	}
+
+	&__info-bronz {
+		color: rgb(194, 127, 65);
+		background-image: linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		width: 128px;
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+	}
+
+	&__info-common {
+		color: rgb(196, 196, 196);
+		background-color: rgb(92, 92, 92);
+		width: 178px;
+	}
+
+	&__info-trash {
+		color: rgb(196, 94, 94);
+		background-image: linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		width: 124px;
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+	}
+
+	&__strip {
+		position: absolute;
+		top: 0.625rem;
+		right: -86px;
+		border-radius: 10px;
+		z-index: 1;
+		background-color: rgb(215, 215, 215);
+		width: 110px;
+		height: 10px;
+	}
+
+	&__strip-center {
+		width: 130px;
+		height: 12px;
+		top: 1.4375rem;
+		right: -120px;
+	}
+
+	&__strip-center-left {
+		left: -120px;
+	}
+
+	&__strip-left {
+		left: -86px;
+	}
+
+	&__strip-down {
+		top: 2.375rem;
+	}
+}
+.sample {
+	display: flex;
+	align-items: center;
+	&__position {
+		font-size: 4.0625em;
+		font-family: "Roboto";
+		color: rgb(213, 213, 213);
+		font-weight: 800;
+		position: absolute;
+		left: 0;
+		font-style: italic;
+		transform: matrix( 0.99995773397766,0,0,1,0,0);
+	}
+
+	&__wpgAdv {
+		
+		background-image: linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+		// background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+		// background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+		// background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+		box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
+		margin-left: 155px;
+	}
+}
+.wpgAdv {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 6fr 0.7fr 1.3fr;
+	grid-template-rows: 125px;
+	grid-template-areas: "avatar info votesButtons votesCount";	
+	max-width: 855px;
+	border-radius: 0 70px 70px 0;
+
+	&__avatar {
+		position: relative;
+		width: 6.5625rem;
+		height: 6.5625rem;
+		margin: 10px;
+	}
+
+	&__avatar_link {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		transition: 0.4s ease all;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&::after {
+			content: "➜";
+			color: #fff;
+			font-size: 3em;
+			opacity: 0;
+		}
+	}
+
+	&__avatar_img {
+		grid-area: avatar;
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__briefInfo {
+		grid-area: info;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		font-family: "Open Sans";
+		font-weight: 600;
+		letter-spacing: 0.3px;
+		color: rgb(43, 43, 43);
+		line-height: 1.5;
+		transform: matrix( 0.99995773397766,0,0,1,0,0);
+		margin: 18px 0 22px 22px;
+	}
+
+	&__name {
+		a {
+			font-size: 1.125em;
+			color: rgb(43, 43, 43);
+			font-weight: 800;
+			transition: 0.08s ease all;
+			&:hover {
+				border-bottom: 1.5px solid #000;
+			}
+		}
+	}
+
+	&__genre {
+		font-size: 0.9375em;
+		font-weight: Semibold;
+	}
+
+	&__genre-value {
+		color: #c6c6c6;
+	}
+
+	&__type {
+	}
+
+	&__votesCount {
+		grid-area: votesCount;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3.125em;
+		font-family: "Roboto";
+		letter-spacing: 0.5px;
+		border-radius: 0 70px 70px 0;
+		& p {
+			margin: 0 20px 0 12px;
+		}
+	}
+
+	&__votesCount-gold {
+		color: rgb(206, 174, 57);
+		background-image: linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	}
+
+	&__votesCount-silver {
+	}
+
+	&__votesCount-bronz {
+	}
+
+	&__votesCount-common {
+	}
+
+	&__votesCount-trash {
+	}
+
+	&__voteButtons {
+		grid-area: votesButtons;
+		min-width: 90px;
+		display: flex;
+		flex-direction: column;
+		border-left: 3px solid #eceded;
+	}
+
+	&__vote {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		font-size: 2em;
+		font-family: "Roboto";
+		color: rgb(213, 213, 213);
+	}
+
+	&__vote-Up {
+		border-bottom: 3px solid #eceded;
+	}
+
+	&__vote-Down {
+	}
+}
+
 .title {
 	font-size: 2.625em;
 	font-family: $fontTitle;
