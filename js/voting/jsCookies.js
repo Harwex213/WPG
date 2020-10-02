@@ -2,7 +2,6 @@ $(document).ready(function () {
 
 	$("a.wpgAdv__vote-Up").click(function () {
 		the_id = $(this).attr('id');
-
 		// проверяем, есть ли запись о том, что vote + id уже нажимали
 		if ($.cookies.get("vote" + the_id))
 			$(".container_" + the_id).html("<span class='notVoted'>&#10008</span>");

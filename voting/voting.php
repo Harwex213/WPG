@@ -51,7 +51,6 @@ $path = '../';
 			$trash = 1;//print first negative elemetnts
 			$query = 'SELECT * FROM entries order by votes DESC';
 			$rows = $mysqli->query($query);
-
 			if(mysqli_num_rows($rows)>0){ //table is non-empty
 			while($row = mysqli_fetch_assoc($rows)){
 				$net_vote = $row['votes']; //this is the net result of voting up and voting down
