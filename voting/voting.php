@@ -22,6 +22,7 @@ $path = '../';
 <script type='text/javascript' src='../js/voting/jsCookies.js'></script>
 
 
+
 <body>
 <!----header---->
 <?php include ("../blocks/header.php")?>
@@ -52,6 +53,7 @@ $path = '../';
 					</svg>
 		</div>
 	</div>
+	<div id='message'></div>
 	<?php
 		$u = 1;//print transfer
 		$trash = 1;//print first negative elemetnts
@@ -97,6 +99,7 @@ $path = '../';
 			   </svg></div></div>";
 			}
 	?>
+	
 	<div class='container_vote'>
 		<span class='transfer'>#<?php echo $u ?></span> 
 		<div class='voting'>

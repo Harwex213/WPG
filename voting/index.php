@@ -13,8 +13,10 @@ include('config.php');
 	<link rel="stylesheet" href="../css/index.css">
 </head>
 
+<!--
 <script type='text/javascript' src='../js/voting/jquery.js'></script>
 <script type='text/javascript' src='../js/voting/jquery.cookies.js'></script>
+-->
 <script type='text/javascript' src='../js/voting/jsCookies.js'></script>
 
 
