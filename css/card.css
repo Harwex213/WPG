@@ -449,6 +449,9 @@ ol.counter li:before {
   width: 100%;
   position: relative;
   margin-top: 108px;
+  background-image: -moz-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
 }
 
 /* line 29, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
@@ -585,6 +588,7 @@ ol.counter li:before {
   border-radius: 0 50% 50% 0;
   border: 2px solid #cacaca;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (max-width: 1122px) {
@@ -594,7 +598,7 @@ ol.counter li:before {
   }
 }
 
-/* line 88, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 89, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .avatar__score {
   position: absolute;
   background-color: #5c5c5c;
@@ -643,14 +647,14 @@ ol.counter li:before {
   }
 }
 
-/* line 117, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 118, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .button {
   position: relative;
   height: 86px;
   width: 205px;
 }
 
-/* line 121, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 122, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .button__text {
   display: -webkit-flex;
   display: flex;
@@ -668,12 +672,12 @@ ol.counter li:before {
   transition: 0.15s all;
 }
 
-/* line 133, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 134, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .button__text:hover {
   color: #fff;
 }
 
-/* line 138, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 139, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .button__background {
   position: absolute;
   left: 0;
@@ -681,7 +685,7 @@ ol.counter li:before {
   transition: 0.15s all;
 }
 
-/* line 145, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 146, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .button__background-hover {
   position: absolute;
   left: 0;
@@ -691,27 +695,27 @@ ol.counter li:before {
 }
 
 @media (max-width: 1122px) {
-  /* line 117, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 118, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .button {
     margin: auto 0;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 117, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 118, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .button {
     margin: 50px 2rem;
   }
 }
 
 @media (max-width: 479.98px) {
-  /* line 117, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 118, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .button {
     margin: 50px 0;
   }
 }
 
-/* line 163, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 164, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info {
   width: auto;
   display: -webkit-flex;
@@ -725,7 +729,7 @@ ol.counter li:before {
   box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
 }
 
-/* line 172, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 173, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info_area {
   display: -webkit-flex;
   display: flex;
@@ -733,7 +737,7 @@ ol.counter li:before {
           flex-direction: row;
 }
 
-/* line 177, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 178, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info__line {
   background-image: linear-gradient(-176deg, #12100b 0%, #1c1c1c 100%);
   border-radius: 100px 100px 0 0;
@@ -744,7 +748,7 @@ ol.counter li:before {
 }
 
 @media (max-width: 1122px) {
-  /* line 177, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 178, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__line {
     left: -7px;
     width: 14px;
@@ -752,14 +756,14 @@ ol.counter li:before {
 }
 
 @media (max-width: 479.98px) {
-  /* line 177, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 178, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__line {
     left: -4px;
     width: 8px;
   }
 }
 
-/* line 197, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 198, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info__text {
   font-size: 1.0625em;
   color: #2b2b2b;
@@ -767,66 +771,71 @@ ol.counter li:before {
   padding: 1.5625rem;
   width: 100%;
   border-bottom: 2px solid #e6e6e6;
+  background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 }
 
 @media (max-width: 1122px) {
-  /* line 197, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 198, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__text {
     padding: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 197, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 198, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__text {
     padding: 0.5rem;
   }
 }
 
-/* line 213, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 214, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info__text:first-child {
   font-weight: 400;
   padding: 1.5625rem 0 1.5625rem 2.625rem;
   width: 27rem;
   border: none;
+  background-image: -moz-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
+  background-image: -webkit-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
+  background-image: -ms-linear-gradient( -180deg, rgb(230,230,230) 0%, rgb(221,221,221) 100%);
 }
 
 @media (max-width: 1122px) {
-  /* line 213, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 214, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__text:first-child {
     padding: 1rem 0 1rem 2rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 213, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 214, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info__text:first-child {
     padding: 0.5rem 0 0.5rem 1rem;
     max-width: 150px;
   }
 }
 
-/* line 229, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+/* line 230, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
 .info__text:last-child {
-  border: none;
 }
 
 @media (max-width: 992.98px) {
-  /* line 163, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 164, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info {
     margin: 50px 50px 0 50px;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 163, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 164, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info {
     margin: 0 2rem;
   }
 }
 
 @media (max-width: 479.98px) {
-  /* line 163, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
+  /* line 164, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/card.scss */
   .info {
     margin: 0;
   }

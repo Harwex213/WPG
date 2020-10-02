@@ -18,7 +18,6 @@
 </head>
 
 <body>
-	<div class="prepros"></div>
 	<div class="wrapper">
 	<!--HEADER INCLUDE-->
 	<?php include ("blocks/header.php")?>
@@ -77,7 +76,6 @@
 	<!--JS FILES INCLUDE-->
 	<?php include ("blocks/js.php")?>
 	<!--/JS FILES INCLUDE-->
-	<p></p>
 </body>
 
 </html>

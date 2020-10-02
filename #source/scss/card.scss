@@ -81,6 +81,7 @@
 		border-radius: 0 50% 50% 0;
 		border: 2px solid #cacaca;
 		object-fit: cover;
+		width: 100%;
 		@media (max-width:$md1+px) {
 			width: 280px;
 		}

@@ -409,7 +409,9 @@ ol.counter li:before {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-image: linear-gradient(180deg, #dddddd 0%, white 100%);
+	background-image: -moz-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 180deg, rgb(221,221,221) 0%, rgb(255,255,255) 100%)
 }
 
 /* line 14, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
@@ -542,7 +544,9 @@ ol.counter li:before {
 
 /* line 88, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list {
-  background-image: linear-gradient(90deg, #eeeeee 0%, white 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
   padding-bottom: 40px;
 }
 
@@ -647,21 +651,27 @@ ol.counter li:before {
 /* line 162, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-gold {
   color: #ceae39;
-  background-image: linear-gradient(90deg, #16140a 0%, #484027 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
   width: 108px;
 }
 
 /* line 172, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-silver {
   color: #868da0;
-  background-image: linear-gradient(90deg, #121414 0%, #3e4247 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
   width: 124px;
 }
 
 /* line 181, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-bronz {
   color: #c27f41;
-  background-image: linear-gradient(90deg, #16100a 0%, #483a27 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
   width: 128px;
 }
 
@@ -675,7 +685,9 @@ ol.counter li:before {
 /* line 196, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-trash {
   color: #c45e5e;
-  background-image: linear-gradient(90deg, #160a0a 0%, #482727 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
   width: 124px;
 }
 
@@ -744,7 +756,9 @@ ol.counter li:before {
 
 /* line 252, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .sample__wpgAdv {
-  background-image: linear-gradient(-180deg, #f0f0f0 0%, white 100%);
+  background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
   box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
   margin-left: 155px;
 }
@@ -992,19 +1006,25 @@ ol.counter li:before {
 /* line 425, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-gold {
   color: #ceae39;
-  background-image: linear-gradient(90deg, #16140a 0%, #484027 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,20,10) 0%, rgb(72,64,39) 100%);
 }
 
 /* line 433, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-silver {
   color: #868da0;
-  background-image: linear-gradient(90deg, #121414 0%, #3e4247 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
 }
 
 /* line 441, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-bronz {
   color: #c27f41;
-  background-image: linear-gradient(90deg, #16100a 0%, #483a27 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
 }
 
 /* line 449, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
@@ -1016,7 +1036,9 @@ ol.counter li:before {
 /* line 454, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-trash {
   color: #c45e5e;
-  background-image: linear-gradient(90deg, #160a0a 0%, #482727 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
 }
 
 /* line 462, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
