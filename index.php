@@ -18,6 +18,7 @@
 </head>
 
 <body>
+	<div class="prepros"></div>
 	<div class="wrapper">
 	<!--HEADER INCLUDE-->
 	<?php include ("blocks/header.php")?>

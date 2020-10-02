@@ -209,7 +209,6 @@
 			}
 			@media (max-width:$md3+px) {
 				padding: 0.5rem;
-				min-width: 160px;
 			}
 			&:first-child{
 				font-weight: 400;
@@ -224,7 +223,7 @@
 				}
 				@media (max-width:$md3+px) {
 					padding: 0.5rem 0 0.5rem 1rem;
-					width: 50%;
+					max-width: 150px;
 				}
 			}
 			&:last-child{
