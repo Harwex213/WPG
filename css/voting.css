@@ -236,7 +236,8 @@ ol.counter li:before {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
 
@@ -304,6 +305,7 @@ ol.counter li:before {
 
 /* line 108, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/template.scss */
 .slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -339,7 +341,8 @@ ol.counter li:before {
 
 /* line 126, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/template.scss */
 .mirror {
-  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 
 /* line 128, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/template.scss */
@@ -440,6 +443,7 @@ ol.counter li:before {
 
 /* line 23, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .about {
+  display: -webkit-flex;
   display: flex;
   min-height: calc(100vh - 108px);
   width: 100%;
@@ -539,41 +543,61 @@ ol.counter li:before {
 /* line 88, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list {
   background-image: linear-gradient(90deg, #eeeeee 0%, white 100%);
+  padding-bottom: 40px;
 }
 
-/* line 93, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 94, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list .container {
   position: relative;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+          flex-direction: column;
 }
 
-/* line 99, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 100, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list__title {
   margin: 6.25rem auto 5rem auto;
   text-align: center;
 }
 
-/* line 104, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+@media (max-width: 1122px) {
+  /* line 100, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  .list__title {
+    margin: 5rem auto 3rem auto;
+  }
+}
+
+@media (max-width: 992.98px) {
+  /* line 100, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  .list__title {
+    margin: 4rem auto 2rem auto;
+  }
+}
+
+/* line 111, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list__rank {
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   margin: 2rem 0;
 }
 
 @media (max-width: 479.98px) {
-  /* line 104, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 111, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .list__rank {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
-/* line 113, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 120, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .list__sample {
   margin: 15px 0;
 }
 
-/* line 122, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 129, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .rank__fraction {
   font-size: 4.0625em;
   font-family: "Roboto";
@@ -583,32 +607,36 @@ ol.counter li:before {
 }
 
 @media (max-width: 767.98px) {
-  /* line 122, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 129, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .rank__fraction {
     display: none;
   }
 }
 
-/* line 133, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 140, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .rank__fraction-left {
   position: absolute;
   right: 0;
 }
 
-/* line 138, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 145, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area {
+  display: -webkit-flex;
   display: flex;
   position: relative;
 }
 
-/* line 141, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 148, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info {
+  display: -webkit-flex;
   display: flex;
   position: relative;
   z-index: 2;
   border-radius: calc(3.5625rem/2);
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   font-family: "Roboto";
   font-size: 30px;
   letter-spacing: 0.8px;
@@ -616,42 +644,42 @@ ol.counter li:before {
   height: 57px;
 }
 
-/* line 155, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 162, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-gold {
   color: #ceae39;
   background-image: linear-gradient(90deg, #16140a 0%, #484027 100%);
   width: 108px;
 }
 
-/* line 165, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 172, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-silver {
   color: #868da0;
   background-image: linear-gradient(90deg, #121414 0%, #3e4247 100%);
   width: 124px;
 }
 
-/* line 174, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 181, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-bronz {
   color: #c27f41;
   background-image: linear-gradient(90deg, #16100a 0%, #483a27 100%);
   width: 128px;
 }
 
-/* line 183, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 190, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-common {
   color: #c4c4c4;
   background-color: #5c5c5c;
   width: 178px;
 }
 
-/* line 189, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 196, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__info-trash {
   color: #c45e5e;
   background-image: linear-gradient(90deg, #160a0a 0%, #482727 100%);
   width: 124px;
 }
 
-/* line 198, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 205, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__strip {
   position: absolute;
   top: 0.625rem;
@@ -663,7 +691,7 @@ ol.counter li:before {
   height: 10px;
 }
 
-/* line 209, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 216, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__strip-center {
   width: 130px;
   height: 12px;
@@ -671,28 +699,30 @@ ol.counter li:before {
   right: -120px;
 }
 
-/* line 216, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 223, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__strip-center-left {
   left: -120px;
 }
 
-/* line 220, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 227, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__strip-left {
   left: -86px;
 }
 
-/* line 224, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 231, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .area__strip-down {
   top: 2.375rem;
 }
 
-/* line 228, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 235, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .sample {
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 
-/* line 231, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 238, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .sample__position {
   font-size: 4.0625em;
   font-family: "Roboto";
@@ -701,17 +731,18 @@ ol.counter li:before {
   position: absolute;
   left: 0;
   font-style: italic;
-  transform: matrix(0.999957734, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(0.999957734, 0, 0, 1, 0, 0);
+          transform: matrix(0.999957734, 0, 0, 1, 0, 0);
 }
 
 @media (max-width: 767.98px) {
-  /* line 231, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 238, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .sample__position {
     display: none;
   }
 }
 
-/* line 245, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 252, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .sample__wpgAdv {
   background-image: linear-gradient(-180deg, #f0f0f0 0%, white 100%);
   box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
@@ -719,27 +750,27 @@ ol.counter li:before {
 }
 
 @media (max-width: 992.98px) {
-  /* line 245, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 252, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .sample__wpgAdv {
     margin-left: 110px;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 245, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 252, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .sample__wpgAdv {
     margin: 0 1rem;
   }
 }
 
 @media (max-width: 479.98px) {
-  /* line 245, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 252, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .sample__wpgAdv {
     margin: 0px;
   }
 }
 
-/* line 263, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 270, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv {
   position: relative;
   z-index: 2;
@@ -751,7 +782,7 @@ ol.counter li:before {
   border-radius: 0 70px 70px 0;
 }
 
-/* line 273, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 280, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar {
   position: relative;
   width: 6.5625rem;
@@ -761,7 +792,7 @@ ol.counter li:before {
 }
 
 @media (max-width: 767.98px) {
-  /* line 273, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 280, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__avatar {
     width: 70px;
     height: 70px;
@@ -769,14 +800,15 @@ ol.counter li:before {
 }
 
 @media (max-width: 479.98px) {
-  /* line 273, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 280, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__avatar {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
   }
 }
 
-/* line 289, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 297, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_link {
   position: absolute;
   z-index: 1;
@@ -785,15 +817,19 @@ ol.counter li:before {
   border-radius: 50%;
 }
 
-/* line 295, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 303, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_link::after {
   content: "➜";
-  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
   position: relative;
   z-index: -1;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   border-radius: 50%;
   color: #fff;
   font-weight: 100;
@@ -804,7 +840,7 @@ ol.counter li:before {
   transition: 0.25s ease all;
 }
 
-/* line 312, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 320, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_link::before {
   content: "";
   z-index: -2;
@@ -817,18 +853,19 @@ ol.counter li:before {
   height: 100%;
 }
 
-/* line 324, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 332, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_link:hover::after {
   opacity: 1;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
-/* line 328, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 336, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_link:hover::before {
   opacity: 0.5;
 }
 
-/* line 334, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 342, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__avatar_img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -839,32 +876,44 @@ ol.counter li:before {
   object-fit: cover;
 }
 
-/* line 342, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 350, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__briefInfo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: info;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-flex-direction: column;
+          flex-direction: column;
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 0.9375em;
   letter-spacing: 0.3px;
   color: #2b2b2b;
   line-height: 1.5;
-  transform: matrix(0.999957734, 0, 0, 1, 0, 0);
-  margin: 18px 0 22px 22px;
+  -webkit-transform: matrix(0.999957734, 0, 0, 1, 0, 0);
+          transform: matrix(0.999957734, 0, 0, 1, 0, 0);
+  margin: 18px 0 18px 22px;
 }
 
 @media (max-width: 767.98px) {
-  /* line 342, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 350, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__briefInfo {
     margin: 9px 0 14px 14px;
   }
 }
 
-/* line 361, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+@media (max-width: 479.98px) {
+  /* line 350, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  .wpgAdv__briefInfo {
+    font-size: 12px;
+    margin: 5px 0 5px 5px;
+  }
+}
+
+/* line 373, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__name a {
   font-size: 1.125em;
   color: #2b2b2b;
@@ -873,119 +922,138 @@ ol.counter li:before {
 }
 
 @media (max-width: 479.98px) {
-  /* line 361, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 373, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__name a {
     font-size: 14px;
   }
 }
 
-/* line 369, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 381, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__name a:hover {
   border-bottom: 1.5px solid #000;
 }
 
-/* line 376, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 388, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__genre {
   font-weight: Semibold;
 }
 
 @media (max-width: 479.98px) {
-  /* line 376, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 388, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__genre {
     font-size: 12px;
   }
 }
 
-/* line 383, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 395, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__genre-value {
   color: #c6c6c6;
 }
 
-/* line 390, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 402, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: votesCount;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   font-size: 3.125em;
   font-family: "Roboto";
   letter-spacing: 0.5px;
   border-radius: 0 70px 70px 0;
+  min-width: 115px;
 }
 
 @media (max-width: 767.98px) {
-  /* line 390, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 402, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__votesCount {
     font-size: 2.7em;
+    min-width: 90px;
   }
 }
 
 @media (max-width: 479.98px) {
-  /* line 390, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 402, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__votesCount {
     font-size: 1.7em;
+    min-width: 70px;
   }
 }
 
-/* line 405, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 420, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount p {
   margin: 0 20px 0 12px;
 }
 
-/* line 411, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 425, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-gold {
   color: #ceae39;
   background-image: linear-gradient(90deg, #16140a 0%, #484027 100%);
 }
 
-/* line 419, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 433, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-silver {
   color: #868da0;
   background-image: linear-gradient(90deg, #121414 0%, #3e4247 100%);
 }
 
-/* line 427, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 441, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-bronz {
   color: #c27f41;
   background-image: linear-gradient(90deg, #16100a 0%, #483a27 100%);
 }
 
-/* line 435, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 449, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-common {
   color: #c5c5c5;
   background-color: #5c5c5c;
 }
 
-/* line 440, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 454, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__votesCount-trash {
   color: #c45e5e;
   background-image: linear-gradient(90deg, #160a0a 0%, #482727 100%);
 }
 
-/* line 448, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 462, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__voteButtons {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: votesButtons;
   min-width: 90px;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 767.98px) {
-  /* line 448, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  /* line 462, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
   .wpgAdv__voteButtons {
     min-width: 60px;
   }
 }
 
-/* line 458, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+@media (max-width: 479.98px) {
+  /* line 462, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+  .wpgAdv__voteButtons {
+    min-width: 40px;
+    font-size: 0.8em;
+  }
+}
+
+/* line 476, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__vote {
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   margin: auto;
   width: 100%;
   height: 100%;
@@ -996,18 +1064,18 @@ ol.counter li:before {
   border-left: 3px solid #eceded;
 }
 
-/* line 470, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 488, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__vote:hover {
   color: #000;
   background-color: #eceded;
 }
 
-/* line 476, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 494, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .wpgAdv__vote-Up {
   border-bottom: 3px solid #eceded;
 }
 
-/* line 484, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 502, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .title {
   font-size: 2.625em;
   font-family: "Roboto";
@@ -1017,7 +1085,7 @@ ol.counter li:before {
   line-height: 1.2;
 }
 
-/* line 492, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 510, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .subtitle {
   font-size: 1.0625em;
   font-family: "Open Sans";
@@ -1026,14 +1094,17 @@ ol.counter li:before {
   font-weight: 600;
 }
 
-/* line 499, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 517, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .button {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
+  display: -webkit-flex;
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
   grid-area: button;
 }
 @media (max-width: 1122px){
@@ -1059,7 +1130,7 @@ ol.counter li:before {
   }
 }
 
-/* line 505, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 523, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .button__text {
   position: relative;
   z-index: 2;
@@ -1071,12 +1142,12 @@ ol.counter li:before {
   transition: 0.15s all;
 }
 
-/* line 514, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 532, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .button__text:hover {
   color: #fff;
 }
 
-/* line 519, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 537, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .button__background {
   position: absolute;
   z-index: 1;
@@ -1085,7 +1156,7 @@ ol.counter li:before {
   right: 0;
 }
 
-/* line 527, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
+/* line 545, ../../../../../../Workplace/WEB/OpenServer/domains/WPG/#source/scss/voting.scss */
 .button__background-hover {
   opacity: 0;
   position: absolute;

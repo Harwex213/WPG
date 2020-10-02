@@ -129,8 +129,8 @@ $path = '../';
 					</div>
 					<span class="wpgAdv__briefInfo">
 						<p class="wpgAdv__name"><a href='<?php echo $row['link']; ?>'> <?php echo $row['title']; ?> </a></p>
-						<p class="wpgAdv__genre">Фэнтези: <span class="wpgAdv__genre-value">авторский мир</span></p>
-						<p class="wpgAdv__type">РП/Калькулятор<?php echo $row['type']; ?></p>
+						<p class="wpgAdv__genre"><?php echo $row['genre']; ?></p>
+						<p class="wpgAdv__type"><?php echo $row['types']; ?></p>
 					</span>
 					<?php
 					if($u <= 3 && $net_vote > 0) 

@@ -69,7 +69,7 @@ for($i=0; $row = mysqli_fetch_assoc($r);	$i++){
 				<div class='info_area info__area-typeWPG'>
 					<p class='info__text'>Тип игрового процесса:</p>
 					<p class='info__text'>");
-	echo $row['type'];
+	echo $row['types'];
 	echo ("</p>
 				</div>
 				<div class='info_area info__area-genre'>
