@@ -77,6 +77,7 @@
 	<!--JS FILES INCLUDE-->
 	<?php include ("blocks/js.php")?>
 	<!--/JS FILES INCLUDE-->
+	<p></p>
 </body>
 
 </html>
