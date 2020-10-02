@@ -124,7 +124,10 @@ $path = '../';
 			<div class="sample list__sample"> 
 				<span class="sample__position">#<?php echo $u ?></span>
 				<div class="wpgAdv sample__wpgAdv">
-					<img class="wpgAdv__avatar" id="<?php echo $row['id']; ?>" src="../img/logo_130/img<?php echo $row['id']; ?>.jpg">
+					<div class="wpgAdv__avatar">
+						<a class="wpgAdv__avatar_link" href="#"></a>
+						<img class="wpgAdv__avatar_img" id="<?php echo $row['id']; ?>" src="../img/logo_130/img<?php echo $row['id']; ?>.jpg">
+					</div>
 					<span class="wpgAdv__briefInfo">
 						<p class="wpgAdv__name"><a href='<?php echo $row['link']; ?>'> <?php echo $row['title']; ?> </a></p>
 						<p class="wpgAdv__genre">Фэнтези: <span class="wpgAdv__genre-value">авторский мир</span></p>
@@ -162,7 +165,7 @@ $path = '../';
 						echo "'>";
 					}
 					?>
-						<span id='votes_count_<?php echo $row['id']; ?>'><?php echo $net_vote; ?></span>
+						<span id='votes_count_<?php echo $row['id']; ?>'><p><?php echo $net_vote; ?></p></span>
 					</div>
 					<div class='wpgAdv__voteButtons' id='vote_buttons<?php echo $row['id']; ?>'>
 						<a href='javascript:;' class='wpgAdv__vote wpgAdv__vote-Up' id='<?php echo $row['id']; ?>'>+1</a>
