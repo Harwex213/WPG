@@ -160,7 +160,7 @@ $path = '../';
 					}
 					else
 					{
-						echo "<div class='wpgAdv__votesCount-trash container_"; 
+						echo "<div class='wpgAdv__votesCount wpgAdv__votesCount-trash container_"; 
 						echo $row['id'];
 						echo "'>";
 					}

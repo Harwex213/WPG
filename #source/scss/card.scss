@@ -209,9 +209,7 @@
 			}
 			@media (max-width:$md3+px) {
 				padding: 0.5rem;
-			}
-			@media (max-width:$md4+px) {
-				font-size: 1em;
+				min-width: 160px;
 			}
 			&:first-child{
 				font-weight: 400;

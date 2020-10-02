@@ -98,12 +98,16 @@
 
 	&__title {
 		margin: 6.25rem auto 5rem auto;
+		text-align: center;
 	}
 
 	&__rank {
 		display: flex;
 		justify-content: center;
 		margin: 2rem 0;
+		@media (max-width:$md4+px) {
+			transform: scale(0.9);
+		}
 	}
 
 	&__sample {
@@ -121,6 +125,9 @@
 		color: rgb(213, 213, 213);
 		font-weight: bold;
 		font-style: italic;
+		@media (max-width:$md3+px) {
+			display: none;
+		}
 	}
 
 	&__fraction-left {
@@ -230,23 +237,35 @@
 		left: 0;
 		font-style: italic;
 		transform: matrix( 0.99995773397766,0,0,1,0,0);
+		@media (max-width:$md3+px) {
+			display: none;
+		}
 	}
 
 	&__wpgAdv {
-		
 		background-image: linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 		// background-image: -moz-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 		// background-image: -webkit-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 		// background-image: -ms-linear-gradient( -180deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
 		box-shadow: 0px 1px 1.02px 0.98px rgba(0, 0, 0, 0.15);
 		margin-left: 155px;
+		@media (max-width:$md2+px) {
+			margin-left: 110px;
+		}
+		@media (max-width:$md3+px) {
+			margin: 0 1rem;
+		}
+		@media (max-width:$md4+px) {
+			margin: 0px;
+		}
 	}
 }
 .wpgAdv {
 	position: relative;
+	z-index: 2;
 	display: grid;
 	grid-template-columns: 1fr 6fr 0.7fr 1.3fr;
-	grid-template-rows: 125px;
+	grid-template-rows: 1fr;
 	grid-template-areas: "avatar info votesButtons votesCount";	
 	max-width: 855px;
 	border-radius: 0 70px 70px 0;
@@ -256,6 +275,15 @@
 		width: 6.5625rem;
 		height: 6.5625rem;
 		margin: 10px;
+		overflow: hidden;
+		@media (max-width:$md3+px) {
+			width: 70px;
+			height: 70px;
+		}
+		@media (max-width:$md4+px) {
+			width: 50px;
+			height: 50px;
+		}
 	}
 
 	&__avatar_link {
@@ -264,15 +292,42 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
-		transition: 0.4s ease all;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		&::after {
-			content: "➜";
+			content: "➜"; //It's doesn't work as need
+			transform: translateX(-100px);
+			position: relative;
+			z-index: -1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
 			color: #fff;
+			font-weight: 100;
+			width: 100%;
+			height: 100%;
 			font-size: 3em;
 			opacity: 0;
+			transition: 0.25s ease all;
+		}
+		&::before {
+			content: "";
+			z-index: -2;
+			position: absolute;
+			background-color: #000;
+			transition: 0.25s ease all;
+			border-radius: 50%;
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&::after {
+				opacity: 1;
+				transform: translateX(0px);
+			}
+			&::before {
+				opacity: 0.5;
+			}
 		}
 	}
 
@@ -281,6 +336,7 @@
 		border-radius: 50%;
 		width: 100%;
 		height: 100%;
+		object-fit: cover;
 	}
 
 	&__briefInfo {
@@ -290,11 +346,15 @@
 		flex-direction: column;
 		font-family: "Open Sans";
 		font-weight: 600;
+		font-size: 0.9375em;
 		letter-spacing: 0.3px;
 		color: rgb(43, 43, 43);
 		line-height: 1.5;
 		transform: matrix( 0.99995773397766,0,0,1,0,0);
 		margin: 18px 0 22px 22px;
+		@media (max-width:$md3+px) {
+			margin: 9px 0 14px 14px;
+		}
 	}
 
 	&__name {
@@ -303,15 +363,21 @@
 			color: rgb(43, 43, 43);
 			font-weight: 800;
 			transition: 0.08s ease all;
+			@media (max-width:$md4+px) {
+				font-size: 14px;
+			}
 			&:hover {
 				border-bottom: 1.5px solid #000;
 			}
+			
 		}
 	}
 
 	&__genre {
-		font-size: 0.9375em;
 		font-weight: Semibold;
+		@media (max-width:$md4+px) {
+			font-size: 12px;
+		}
 	}
 
 	&__genre-value {
@@ -330,8 +396,15 @@
 		font-family: "Roboto";
 		letter-spacing: 0.5px;
 		border-radius: 0 70px 70px 0;
+		@media (max-width:$md3+px) {
+			font-size: 2.7em;
+		}
+		@media (max-width:$md4+px) {
+			font-size: 1.7em;
+		}
 		& p {
 			margin: 0 20px 0 12px;
+			
 		}
 	}
 
@@ -344,15 +417,32 @@
 	}
 
 	&__votesCount-silver {
+		color: rgb(134, 141, 160);
+		background-image: linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		// background-image: -moz-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(18,20,20) 0%, rgb(62,66,71) 100%);
 	}
 
 	&__votesCount-bronz {
+		color: rgb(194, 127, 65);
+		background-image: linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,16,10) 0%, rgb(72,58,39) 100%);
 	}
 
 	&__votesCount-common {
+		color: rgb(197, 197, 197);
+		background-color: rgb(92, 92, 92);
 	}
 
 	&__votesCount-trash {
+		color: rgb(196, 94, 94);
+		background-image: linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		// background-image: -moz-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		// background-image: -webkit-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
+		// background-image: -ms-linear-gradient( 90deg, rgb(22,10,10) 0%, rgb(72,39,39) 100%);
 	}
 
 	&__voteButtons {
@@ -360,7 +450,9 @@
 		min-width: 90px;
 		display: flex;
 		flex-direction: column;
-		border-left: 3px solid #eceded;
+		@media (max-width:$md3+px) {
+			min-width: 60px;
+		}
 	}
 
 	&__vote {
@@ -373,6 +465,12 @@
 		font-size: 2em;
 		font-family: "Roboto";
 		color: rgb(213, 213, 213);
+		transition: 0.15s ease all;
+		border-left: 3px solid #eceded;
+		&:hover {
+			color: #000;
+			background-color: #eceded;
+		}
 	}
 
 	&__vote-Up {

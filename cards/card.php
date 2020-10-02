@@ -16,6 +16,7 @@ $position_page_voting = 0;
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--LINKS-CSS INCLUDE-->
 	<link rel="stylesheet" href="../css/header/header.css">
 	<link rel="stylesheet" href="../css/footer/footer.css">
