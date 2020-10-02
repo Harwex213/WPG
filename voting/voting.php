@@ -124,11 +124,11 @@ $path = '../';
 				<span class="sample__position">#<?php echo $u ?></span>
 				<div class="wpgAdv sample__wpgAdv">
 					<div class="wpgAdv__avatar">
-						<a class="wpgAdv__avatar_link" href="#"></a>
+						<a class="wpgAdv__avatar_link" href="../cards/card.php?id=<?php echo $row['id'];?>"></a>
 						<img class="wpgAdv__avatar_img" id="<?php echo $row['id']; ?>" src="../img/logo_130/img<?php echo $row['id']; ?>.jpg">
 					</div>
 					<span class="wpgAdv__briefInfo">
-						<p class="wpgAdv__name"><a href='<?php echo $row['link']; ?>'> <?php echo $row['title']; ?> </a></p>
+						<p class="wpgAdv__name"><a href="../cards/card.php?id=<?php echo $row['id'];?>"> <?php echo $row['title']; ?> </a></p>
 						<p class="wpgAdv__genre"><?php echo $row['genre']; ?></p>
 						<p class="wpgAdv__type"><?php echo $row['types']; ?></p>
 					</span>
