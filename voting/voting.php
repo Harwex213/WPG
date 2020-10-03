@@ -20,11 +20,11 @@ $path = '../';
 <!-------------->
 <div class="wrapper">
 	<section class="about">
-			<img src="../img/voting/about_backgr_img.png" alt="background" class="about__ibg">
+			<img src="../img/voting/about_backgr_img.png" alt="background" class="about__ibg wow fadeInRight" data-wow-duration="0.67s">
 			<div class="container">
-				<h1 class="title about__title">Владеете своей ВПИ?</h1>
-				<p class="subtitle about__subtitle">Добавьте свою <span>активную</span> ВПИ для всеобщего обозрения в рейтинговый список</p>
-				<div class="button about__button">
+				<h1 class="title about__title wow fadeInLeft" data-wow-duration="0.67s">Владеете своей ВПИ?</h1>
+				<p class="subtitle about__subtitle wow fadeInLeft" data-wow-duration="0.67s">Добавьте свою <span>активную</span> ВПИ для всеобщего обозрения в рейтинговый список</p>
+				<div class="button about__button wow fadeInLeft" data-wow-duration="0.67s">
 					<a href="#" class="button__text about__button-text">Добавить ВПИ</a>
 					<img src="../img/voting/button.png" alt="" class="button__background">
 					<img src="../img/voting/button_hover.png" alt="" class="button__background button__background-hover">
@@ -33,8 +33,8 @@ $path = '../';
 	</section>
 	<section class="list">
 		<div class="container">
-			<div class="title list__title"><p>Рейтинговый список ВПИ</p></div>
-			<div class="rank list__rank">
+			<div class="title list__title wow fadeIn"><p>Рейтинговый список ВПИ</p></div>
+			<div class="rank list__rank wow fadeIn">
 				<div class="area rank__area">
 					<div class="area__info area__info-gold">Gold</div>
 					<div class="area__strip"></div>
@@ -56,7 +56,7 @@ $path = '../';
 				$net_vote = $row['votes']; //this is the net result of voting up and voting down
 				if($u == 4) {
 					echo '
-					<div class="rank list__rank">
+					<div class="rank list__rank wow fadeIn">
 						<div class="area rank__area">
 							<div class="area__info area__info-silver">Silver</div>
 							<div class="area__strip"></div>
@@ -72,7 +72,7 @@ $path = '../';
 				}
 				elseif($u == 9) {
 					echo '
-					<div class="rank list__rank">
+					<div class="rank list__rank wow fadeIn">
 						<div class="area rank__area">
 							<div class="area__info area__info-bronz">Bronz</div>
 							<div class="area__strip"></div>
@@ -88,7 +88,7 @@ $path = '../';
 				}
 				elseif($u == 19){
 					echo '
-					<div class="rank list__rank">
+					<div class="rank list__rank wow fadeIn">
 						<div class="area rank__area">
 							<div class="area__info area__info-common">Common</div>
 							<div class="area__strip"></div>
@@ -105,7 +105,7 @@ $path = '../';
 				elseif($net_vote < 0 && $trash) {
 					$trash = 0;
 					echo '
-					<div class="rank list__rank">
+					<div class="rank list__rank wow fadeIn">
 						<div class="area rank__area">
 							<div class="area__info area__info-trash">Trash</div>
 							<div class="area__strip"></div>
@@ -120,7 +120,7 @@ $path = '../';
 					';
 				}
 			?>
-			<div class="sample list__sample"> 
+			<div class="sample list__sample wow fadeIn"> 
 				<span class="sample__position">#<?php echo $u ?></span>
 				<div class="wpgAdv sample__wpgAdv">
 					<div class="wpgAdv__avatar">

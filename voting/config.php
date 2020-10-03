@@ -10,5 +10,5 @@ $db_name = 'wpi';
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 //подключение к БД
-$mysqli = new mysqli($hostname, $db_username, $db_password,$db_name) ;
+$mysqli = new mysqli($hostname, $db_username, $db_password,$db_name);
 ?>

@@ -9,7 +9,7 @@ $row = mysqli_fetch_assoc($result);
 $net_vote = $row['votes'];
 ?>
 
-<header class="header">
+<header class="header wow fadeInDown" data-wow-duration="0.47s">
 	<div class="container">
 		<div class="header-body">
 			<div class="logos">

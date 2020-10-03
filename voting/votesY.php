@@ -11,12 +11,12 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 	function getAllVotes($id)
 	{
 		$votes = array();
-		$r = $mysqli->query('SELECT * FROM entries WHERE id = $id');
+		global $mysqli;
+		$r = $mysqli->query("SELECT votes FROM entries WHERE id = '$id'");
 		if(mysqli_num_rows($r)==1)//id наден в таблице
 		{
 			$row = mysqli_fetch_assoc($r);
-			$votes[0] = $row['votes_up'];
-			$votes[1] = $row['votes_down'];
+			$votes[0] = $row['votes'];
 		}
 		return $votes;
 	}
@@ -38,30 +38,26 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 
 	if(mysqli_num_rows($r)==1)
 	{
-		echo getEffectiveVotes($id).' голосов(а). <span style="color:red">Ваш голос не учтен. С вашего ip - '.$ip.' голосование проходило. Повторно проголосовать вы сможете завтра</span>';
+		echo "<script>$('.container_' + the_id).html('<span class='voted'>&#10004</span>')</script>";
 	exit;
 	}
-	else {
-    	$mysqli->query("INSERT INTO vote_ip (id_resp, ip, data_resp) VALUES ('$id', '$ip', '$day')");
-	}
-
 	if($action=='vote_up') //voting up
 	{
-		$votes_up = $cur_votes[0]+1;
-		$q = "UPDATE entries SET votes_up = $votes_up WHERE id = $id";
+		$votes = $cur_votes[0]+1;
+		$q = "UPDATE entries SET votes = $votes WHERE id = $id";
 	}
 	elseif($action=='vote_down') //voting down
 	{
-		$votes_down = $cur_votes[1]+1;
-		$q = "UPDATE entries SET votes_down = $votes_down WHERE id = $id";
+		$votes = $cur_votes[0]-1;
+		$q = "UPDATE entries SET votes = $votes WHERE id = $id";
 	}
 	$r = $mysqli->query($q);
 
-	if($r) 
+	if($r)
 	{
 		$effectiveVote = getEffectiveVotes($id);
-		echo $effectiveVote." голосов(а)";
-		$date_resp = date("Y-m-d",time()+ 1*60*60*24); // запоминаем завтрашнююю дату
+		echo $effectiveVote;
+		$date_resp = date("Y-m-d",time()+ 2592000); // запоминаем завтрашнююю дату
 		$mysqli->query("INSERT INTO vote_ip (id_resp, ip, date_resp) VALUES ('$id','$ip','$date_resp')");
 	}
 	elseif(!$r) //voting failed

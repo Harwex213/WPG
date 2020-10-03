@@ -1,3 +1,3 @@
 <?php
-echo "#";
+echo "<script>alert('Hello');</script>";
 ?>

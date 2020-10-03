@@ -24,17 +24,17 @@
 	<!--/HEADER INCLUDE-->
 	<!--MAIN-->
 	<section class="introduction">
-			<img src="img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg">
+			<img src="img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg wow fadeInRight" data-wow-duration="0.67s">
 			<div class="container">
-				<h1 class="title introduction__title">Желаете узнать о качестве любой ВПИ?</h1>
-				<p class="subtitle introduction__subtitle">Переходите на рейтинговый список, где вы увидите активные ВПИ
+				<h1 class="title introduction__title wow fadeInLeft" data-wow-duration="0.67s">Желаете узнать о качестве любой ВПИ?</h1>
+				<p class="subtitle introduction__subtitle wow fadeInLeft" data-wow-duration="0.67s">Переходите на рейтинговый список, где вы увидите активные ВПИ
 					по своему вкусу</p>
-				<div class="button introduction__button">
+				<div class="button introduction__button wow fadeInLeft" data-wow-duration="0.67s">
 					<a href="voting/voting.php" class="button__text introduction__button-text">Перейти на список ВПИ</a>
 					<img src="img/index/button.png" alt="" class="button__background">
 					<img src="img/index/button_hover.png" alt="" class="button__background button__background-hover">
 				</div>
-				<div class="columns introduction__columns">
+				<div class="columns introduction__columns wow fadeInUp" data-wow-duration="0.67s">
 					<div class="columns__container">
 						<div class="columns__column columns__column-1">#4</div>
 						<div class="columns__column columns__column-2">#36</div>
@@ -48,8 +48,8 @@
 		</section>
 		<section class="about">
 			<div class="container">
-				<h1 class="title about__title">ВПИ — Военно-Политическая Игра</h1>
-				<div class="paragraph about__paragraph">
+				<h1 class="title about__title wow fadeIn">ВПИ — Военно-Политическая Игра</h1>
+				<div class="paragraph about__paragraph wow fadeIn">
 					<div class="paragraph__line"></div>
 					<p class="paragraph__text">Не следует, однако забывать, что дальнейшее развитие различных форм
 						деятельности способствует подготовки и реализации форм развития. Равным образом консультация с

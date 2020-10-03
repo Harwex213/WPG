@@ -9,13 +9,12 @@ $(document).ready(function () {
 		else // Если нет, то тогда работаем дальше
 		{
 			$(".container_" + the_id).html("<span class='voted'>&#10004</span>");
-			$.ajax({
-				type: "POST",
+			$.ajax("votesY.php", {
+				type: "post",
 				data: "action=vote_up&id=" + $(this).attr("id"),
-				url: "../../voting/voting.php",
 				success: function (msg) {
 					// создаем файл cookies
-					// $.cookies.set("vote" + the_id, 12345679, { hoursToLive: 168 });
+					$.cookies.set("vote" + the_id, 'PIDORAS_NE_UDOLAY)))', { hoursToLive: 720 });
 				}
 			});
 		}
@@ -35,10 +34,10 @@ $(document).ready(function () {
 			$.ajax({
 				type: "POST",
 				data: "action=vote_down&id=" + $(this).attr("id"),
-				url: "../../voting/voting.php",
+				url: "votesY.php",
 				success: function (msg) {
 
-					// $.cookies.set("vote" + the_id, 12345679, { hoursToLive: 168 });
+					$.cookies.set("vote" + the_id, 'PIDORAS_NE_UDOLAY)))', { hoursToLive: 720 });
 				}
 			});
 		}

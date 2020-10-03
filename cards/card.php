@@ -18,15 +18,14 @@ $position_page_voting = 0;
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--LINKS-CSS INCLUDE-->
-	<link rel="stylesheet" href="../css/header/header.css">
-	<link rel="stylesheet" href="../css/footer/footer.css">
+	<?php include ("../blocks/link_css.php")?>
 	<link rel="stylesheet" href="../css/card.css">
 	<!--/LINKS-CSS INCLUDE-->
 </head>
 
 <body>
-<?php include ("../blocks/header.php")?>
 <div class="wrapper"> 
+<?php include ("../blocks/header.php")?>
 <?php
 $bd_sort_desc = 'SELECT * FROM entries order by votes DESC';
 $r_sort = $mysqli->query($bd_sort_desc);
@@ -45,7 +44,7 @@ for($i=0; $row = mysqli_fetch_assoc($r);	$i++){
 	if($i==$id){
 	echo ("<section class='card'>
 		<div class='container'>
-			<div class='avatar card__avatar'>
+			<div class='avatar card__avatar wow fadeInLeft'>
 				<img src='../img/cards/img");
 	echo $row['id'];
 	echo (".jpg' alt='avatar' class='avatar__img'>
@@ -53,12 +52,12 @@ for($i=0; $row = mysqli_fetch_assoc($r);	$i++){
 	echo $position_page_voting;
 	echo ("</div>
 			</div>
-			<div class='button card__button'>
+			<div class='button card__button wow fadeInLeft'>
 					<a href='#' class='button__text card__button-text'>Перейти к ВПИ</a>
 					<img src='../img/cards/button_cards.png' alt='' class='button__background'>
 					<img src='../img/cards/button_cards_hover.png' alt='' class='button__background button__background-hover'>
 				</div>
-			<div class='info card__info'>
+			<div class='info card__info wow fadeInRight'>
 				<div class='info__line'></div>
 				<div class='info_area info__area-name'>
 					<p class='info__text'>Название:</p>
