@@ -1,9 +1,9 @@
 <?php
 /*данные для входа в MySQLi*/
-$hostname = 'WPG';
+$hostname = 'localhost';
 $db_username = 'root';
-$db_password = 'root';
-$db_name = 'wpi';
+$db_password = '';
+$db_name = 'test';
 /***************************/
 
 //обработка ошибок реализованная в php7

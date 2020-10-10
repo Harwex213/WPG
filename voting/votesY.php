@@ -5,7 +5,7 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 	include("config.php");
 
 	$day = date("Y-m-d H:i:s");
-	//проверка не вышла ли блокировка ip по времени
+	
 	$mysqli->query("DELETE FROM vote_ip WHERE date_resp < '$day'");
 
 	function getAllVotes($id)
