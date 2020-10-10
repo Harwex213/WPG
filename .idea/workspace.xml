@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a7c5d24-c71f-40b2-9fee-52eea48551ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/voting/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/voting/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/votes(test).php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/voting/votes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/votesY.php" beforeDir="false" afterPath="$PROJECT_DIR$/voting/votesY.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="IntelliJ IDEA 2020.1" id="c08f5102-d468-4c3f-881a-3cc425b07c88" name="IntelliJ IDEA 2020.1" port="63342" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1ielb30XJMaTnHdNnVRqzq7Brr6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration name="votingY.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WPG/voting/votingY.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.votingY.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a7c5d24-c71f-40b2-9fee-52eea48551ed" name="Default Changelist" comment="" />
+      <created>1602276005688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602276005688</updated>
+      <workItem from="1602276012919" duration="1285000" />
+      <workItem from="1602277345444" duration="196000" />
+      <workItem from="1602277600525" duration="1259000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="380" y="85" key="#CLI_Interpreters" timestamp="1602276191042">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="380" y="85" key="#CLI_Interpreters/0.0.1600.860@0.0.1600.860" timestamp="1602276191042" />
+    <state x="507" y="73" key="#PHP" timestamp="1602276196733">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="507" y="73" key="#PHP/0.0.1600.860@0.0.1600.860" timestamp="1602276196733" />
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602279381456">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1602279381456" />
+    <state x="555" y="133" key="#xdebugger.evaluate" timestamp="1602276828752">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="555" y="133" key="#xdebugger.evaluate/0.0.1600.860@0.0.1600.860" timestamp="1602276828752" />
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1602276186833">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602276186833" />
+    <state width="1340" height="256" key="GridCell.Tab.0.bottom" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.0.center" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.0.left" timestamp="1602279469354">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602279469354" />
+    <state width="1340" height="256" key="GridCell.Tab.0.right" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.1.bottom" timestamp="1602279469356">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602279469356" />
+    <state width="1340" height="256" key="GridCell.Tab.1.center" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.1.left" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.1.right" timestamp="1602279469355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1602279469355" />
+    <state width="1340" height="256" key="GridCell.Tab.2.bottom" timestamp="1602279393239">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602279393239" />
+    <state width="1340" height="256" key="GridCell.Tab.2.center" timestamp="1602279393238">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1602279393238" />
+    <state width="1340" height="256" key="GridCell.Tab.2.left" timestamp="1602279393238">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1602279393238" />
+    <state width="1340" height="256" key="GridCell.Tab.2.right" timestamp="1602279393239">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="256" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1602279393239" />
+    <state x="354" y="159" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602279460573">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="354" y="159" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1600.860@0.0.1600.860" timestamp="1602279460573" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/cards/card.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/voting/votesY.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$row" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WPG$index_php.dat" NAME="index.php Coverage Results" MODIFIED="1602279135062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
