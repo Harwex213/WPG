@@ -1,11 +1,11 @@
 <?php
 
-if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') 
+if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 {
 	include("config.php");
 
 	$day = date("Y-m-d H:i:s");
-	
+
 	$mysqli->query("DELETE FROM vote_ip WHERE date_resp < '$day'");
 
 	function getAllVotes($id)
@@ -13,7 +13,7 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 		$votes = array();
 		global $mysqli;
 		$r = $mysqli->query("SELECT votes FROM entries WHERE id = '$id'");
-		if(mysqli_num_rows($r)==1)//id наден в таблице
+		if($r->num_rows == 1)//id наден в таблице
 		{
 			$row = mysqli_fetch_assoc($r);
 			$votes[0] = $row['votes'];
@@ -39,7 +39,7 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 	if(mysqli_num_rows($r)==1)
 	{
 		echo "<script>$('.container_' + the_id).html('<span class='voted'>&#10004</span>')</script>";
-	exit;
+		exit;
 	}
 	if($action=='vote_up') //voting up
 	{
@@ -58,11 +58,11 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 		$effectiveVote = getEffectiveVotes($id);
 		echo $effectiveVote;
 		$date_resp = date("Y-m-d",time()+ 2592000); // запоминаем завтрашнююю дату
-		$mysqli->query("INSERT INTO vote_ip (id_resp, ip, date_resp) VALUES ('$id','$ip','$date_resp')");
+		//$mysqli->query("INSERT INTO vote_ip (id_resp, ip, date_resp) VALUES ('$id','$ip','$date_resp')");
 	}
 	elseif(!$r) //voting failed
 	{
-	echo "Ошибка!";
+		echo "Ошибка!";
 	}
 }
 else

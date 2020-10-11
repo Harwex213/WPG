@@ -16,7 +16,7 @@ $path = '../';
 </head>
 <body>
 <!----header---->
-<?php include ("../blocks/header.php")?>
+<!--php include ("../blocks/header.php")?-->
 <!-------------->
 <div class="wrapper">
 	<section class="about">

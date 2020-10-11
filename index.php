@@ -23,6 +23,7 @@
 	<?php include ("blocks/header.php")?>
 	<!--/HEADER INCLUDE-->
 	<!--MAIN-->
+        <!--php include ("voting/votes.php") ?-->
 	<section class="introduction">
 			<img src="img/index/introduction_backgr_img.png" alt="background" class="introduction__ibg wow fadeInRight" data-wow-duration="0.67s">
 			<div class="container">
@@ -76,6 +77,8 @@
 	<!--JS FILES INCLUDE-->
 	<?php include ("blocks/js.php")?>
 	<!--/JS FILES INCLUDE-->
+
+
 </body>
 
 </html>
